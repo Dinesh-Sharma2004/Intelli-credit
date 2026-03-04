@@ -1,0 +1,10 @@
+company_name,period,gst_registration,gstr_1_sales,gstr_2a_purchases,gstr_3b_net,tax_paid_cr
+TechVenture Solutions Pvt Ltd,2023-04,36AABCT1234A1Z0,18.92,15.45,3.47,0.63
+TechVenture Solutions Pvt Ltd,2023-05,36AABCT1234A1Z0,17.45,16.78,0.67,0.12
+TechVenture Solutions Pvt Ltd,2023-06,36AABCT1234A1Z0,19.87,17.34,2.53,0.46
+TechVenture Solutions Pvt Ltd,2023-07,36AABCT1234A1Z0,20.34,18.92,1.42,0.26
+TechVenture Solutions Pvt Ltd,2023-08,36AABCT1234A1Z0,21.67,19.56,2.11,0.38
+TechVenture Solutions Pvt Ltd,2023-09,36AABCT1234A1Z0,22.45,20.34,2.11,0.38
+CloudServices Inc,2023-04,29BBADC5678B2X0,14.56,12.34,2.22,0.40
+CloudServices Inc,2023-05,29BBADC5678B2X0,15.23,14.12,1.11,0.20
+CloudServices Inc,2023-06,29BBADC5678B2X0,16.78,15.34,1.44,0.26

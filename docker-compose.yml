@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - intelli-credit-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend Development Server
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev
+    networks:
+      - intelli-credit-network
+    depends_on:
+      - backend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ChromaDB Vector Database
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:latest
+    ports:
+      - "8001:8000"
+    environment:
+      - CHROMA_DB_IMPL=duckdb+parquet
+      - CHROMA_PERSISTENCE_DIR=/chroma/data
+      - IS_PERSISTENT=TRUE
+    volumes:
+      - chromadb-data:/chroma/data
+    networks:
+      - intelli-credit-network
+
+  # PostgreSQL for metadata (optional)
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=intelli_credit
+      - POSTGRES_PASSWORD=secure_password_123
+      - POSTGRES_DB=intelli_credit_db
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - intelli-credit-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U intelli_credit"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  chromadb-data:
+  postgres-data:
+
+networks:
+  intelli-credit-network:
+    driver: bridge

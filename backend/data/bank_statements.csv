@@ -1,0 +1,6 @@
+company_name,bank_name,account_number,ifsc,account_type,opening_balance_cr,closing_balance_cr,total_credits_cr,total_debits_cr,average_balance_cr,turnover_ratio
+TechVenture Solutions Pvt Ltd,HDFC Bank,50200071234567,HDFC0000123,Savings,28.45,38.50,245.67,235.12,33.48,7.35
+TechVenture Solutions Pvt Ltd,ICICI Bank,10234567890123,ICIC0000001,Current,15.67,22.30,189.45,182.82,19.00,9.97
+CloudServices Inc,SBI Bank,31567890123456,SBIN0000015,Savings,18.90,28.75,189.45,180.60,23.83,7.97
+FinTech Innovations Ltd,Axis Bank,919876543210123,UTIB0000123,Current,12.34,24.60,167.89,155.63,18.47,8.54
+DataSoft Solutions,HDFC Bank,50900987654321,HDFC0000123,Savings,22.10,31.45,198.76,189.41,26.78,7.42
