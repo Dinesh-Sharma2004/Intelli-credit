@@ -1,0 +1,82 @@
+{
+  "anomaly_flags": [],
+  "anomaly_score": 0.14,
+  "compliance": {
+    "CRA-RATING": "evidence_mapped",
+    "GST-RECON": "reconciled",
+    "LIT-SEARCH": "evidence_mapped",
+    "MCA-FILING": "evidence_mapped",
+    "RBI-KYC-AML": "evidence_mapped"
+  },
+  "covenants": [
+    "Quarterly financial reporting covenant",
+    "No material adverse litigation covenant"
+  ],
+  "decision": "approve",
+  "early_warning_flags": [],
+  "entity_counts": {
+    "annual_report": {
+      "CIN": 1,
+      "DATE": 1,
+      "FISCAL_YEAR": 4,
+      "GSTIN": 1,
+      "MONEY": 4,
+      "ORG": 2,
+      "PAN": 1,
+      "PERCENT": 4,
+      "PERSON": 2
+    },
+    "bank_statement": {},
+    "gst_filing": {
+      "GSTIN": 12
+    },
+    "rating_report": {
+      "FISCAL_YEAR": 2,
+      "GSTIN": 1,
+      "RATING": 1
+    }
+  },
+  "extraction_sources": {
+    "annual_report": "native",
+    "bank_statement": "native",
+    "gst_filing": "native",
+    "rating_report": "ocr"
+  },
+  "gst_reconciliation_risk": 0.0044,
+  "model_version": "xgboost-pd-synthetic-v2-a3b3739d",
+  "probability_of_default": 0.0087,
+  "reconciliation_counts": {
+    "late_filings": 0,
+    "months_itc_excess_breach": 0,
+    "months_outward_gap_breach": 0,
+    "round_trip_pairs": 0
+  },
+  "research": {
+    "MCA": [
+      "registry",
+      "low"
+    ],
+    "News": [
+      "media",
+      "low"
+    ],
+    "RBI": [
+      "sector_regulation",
+      "low"
+    ],
+    "Sector Intelligence": [
+      "sector_signal",
+      "low"
+    ],
+    "e-Courts": [
+      "no_public_signal",
+      "low"
+    ]
+  },
+  "risk_grade": "AAA",
+  "top_drivers": [
+    "Governance",
+    "Litigation risk",
+    "Profitability quality"
+  ]
+}

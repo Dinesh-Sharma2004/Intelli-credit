@@ -1,0 +1,144 @@
+{
+  "About Kinara Capital": {
+    "document_count": 1,
+    "document_types": [
+      "annual_report"
+    ],
+    "average_confidence": 0.8,
+    "average_grounding": 0.6667,
+    "risk_flags": [
+      "Fraud wording detected"
+    ],
+    "documents": [
+      {
+        "document_name": "b06e9f17-1f92-49f1-99a2-0adbadcc78d6_fy24-annual-report-kinara-capital.pdf",
+        "document_type": "annual_report",
+        "confidence_score": 0.8,
+        "grounding": 0.6667,
+        "preview": "ANN UAL REPORT Table of Contents About Kinara Capital Letter From Founder & CEO 02 04 06 07 12Performance Highlights Our Presence Steadfast GrowthIntroduction 01 09 Our Leadership 11 Our Management Team Our Latest Ad Campaign Our Products HerVikas 22 Strategic Initiatives   Partnerships Technology Initiatives SOC 2 Certification Social ImpactESG In"
+      }
+    ]
+  },
+  "Vivriti Capital": {
+    "document_count": 2,
+    "document_types": [
+      "annual_report"
+    ],
+    "average_confidence": 0.89,
+    "average_grounding": 0.8195,
+    "risk_flags": [
+      "NPA wording detected"
+    ],
+    "documents": [
+      {
+        "document_name": "230d73d3-5fc7-4301-892b-8a51e377d4f1_Annual Report FY 2024-25.pdf",
+        "document_type": "annual_report",
+        "confidence_score": 0.98,
+        "grounding": 1.0,
+        "preview": "Table of Contents A. Company Overview B. Statutory Reports C. Financial StatementsPage No. Message from Managing Director Message from ChairpersonCorporate InformationAbout the Report About the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersSustainability & Impact JourneyCorporate Social Responsibility (CSR) during the Year AGM N"
+      },
+      {
+        "document_name": "40db794c-7d35-40ec-b8df-47eb27b351cf_VCL-ANNUAL REPORT FINAL.pdf",
+        "document_type": "annual_report",
+        "confidence_score": 0.8,
+        "grounding": 0.6389,
+        "preview": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report "
+      }
+    ]
+  },
+  "Vivriti Capital Private Limited": {
+    "document_count": 1,
+    "document_types": [
+      "annual_report"
+    ],
+    "average_confidence": 0.98,
+    "average_grounding": 1.0,
+    "risk_flags": [],
+    "documents": [
+      {
+        "document_name": "06330e86-16f5-4169-8b9e-e63e5c6e1dcb_Consolidated Annual report_FY 2022-23.pdf",
+        "document_type": "annual_report",
+        "confidence_score": 0.98,
+        "grounding": 1.0,
+        "preview": "VIVRITI CAPITAL LIMITED   (formerly known as Vivriti Capital Private Limited)     CIN: U65929TN2017PLC117196   REGD OFFICE: PRESTIGE ZACKRIA METROPOLITAN NO. 200/1 -8, 2ND FLOOR, BLOCK -1,  ANNASALAI, CHENNAI \u2013 600002, INDIA.       SHORTER NOTICE  is hereby given that the 6th Annual  General Meeting  of the shareholders  of  Vivriti Capital Limited"
+      }
+    ]
+  },
+  "Vivriti Capital Limited": {
+    "document_count": 1,
+    "document_types": [
+      "sustainability_report"
+    ],
+    "average_confidence": 0.8,
+    "average_grounding": 1.0,
+    "risk_flags": [
+      "Default-related reference detected"
+    ],
+    "documents": [
+      {
+        "document_name": "d93c4915-3c1c-4524-9cd8-d8fc13a73f1e_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+        "document_type": "sustainability_report",
+        "confidence_score": 0.8,
+        "grounding": 1.0,
+        "preview": "VIVRITI GROUP SUSTAINABILITY REPORT 2024-25 AMPLIFYING LAST-MILEIMPACT 01SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE TABLE OF CONTENTS 02 20 4103 07 12 68 85 96 100 10148 PRO"
+      }
+    ]
+  },
+  "7dda55e4-9c3a-4696-90e6-6a0e3652a8bb_1754051517": {
+    "document_count": 1,
+    "document_types": [
+      "generic_pdf"
+    ],
+    "average_confidence": 0.7,
+    "average_grounding": 1.0,
+    "risk_flags": [],
+    "documents": [
+      {
+        "document_name": "7dda55e4-9c3a-4696-90e6-6a0e3652a8bb_1754051517.pdf",
+        "document_type": "generic_pdf",
+        "confidence_score": 0.7,
+        "grounding": 1.0,
+        "preview": "Corp orate  Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002   Head Office - 411A, Kanakia Wallstreet,  Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093    Public Disclosure on Liquidity Risk as on June  30, 202 5  {Pursuant to RBI Master Direction \u2013 Reserve Bank of India  (Non -Banking Financia"
+      }
+    ]
+  },
+  "Moneyboxx Capital Private Limited": {
+    "document_count": 1,
+    "document_types": [
+      "generic_pdf"
+    ],
+    "average_confidence": 0.98,
+    "average_grounding": 1.0,
+    "risk_flags": [],
+    "documents": [
+      {
+        "document_name": "c6253418-2372-4afe-b345-28379667c16c_1754045722.pdf",
+        "document_type": "generic_pdf",
+        "confidence_score": 0.98,
+        "grounding": 1.0,
+        "preview": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / e"
+      }
+    ]
+  },
+  "Moneyboxx Finance Limited": {
+    "document_count": 1,
+    "document_types": [
+      "generic_pdf"
+    ],
+    "average_confidence": 0.8,
+    "average_grounding": 0.6667,
+    "risk_flags": [
+      "Default-related reference detected",
+      "NPA wording detected"
+    ],
+    "documents": [
+      {
+        "document_name": "c0541a6e-378d-43ef-a935-2a13ddc8d26e_1756892129.pdf",
+        "document_type": "generic_pdf",
+        "confidence_score": 0.8,
+        "grounding": 0.6667,
+        "preview": "Trusted  Lending.  Boundless Reach.Integrated Report   2024-25  Trusted Lending. Boundless Reach.  1 About the Repor t  2 Contribution to UN SDGs  6 Letter fr om the Co-Founders  8 About Mone yboxx  10 A wards  13 Operating Context  14 Strateg y  17 Stak eholder Engagement  20 Risk Mitigation  22 V alue Creation Model  26 Financial Ca pital  28 Man"
+      }
+    ]
+  }
+}

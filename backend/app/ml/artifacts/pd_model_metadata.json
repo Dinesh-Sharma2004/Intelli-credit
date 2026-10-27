@@ -1,0 +1,71 @@
+{
+  "model_version": "xgboost-pd-synthetic-v2-a3b3739d",
+  "n_trees": 99,
+  "trained_at": "2026-10-27T10:43:29+00:00",
+  "xgboost_version": "3.2.0",
+  "feature_keys": [
+    "document_coverage_score",
+    "identifier_coverage_score",
+    "gst_consistency_score",
+    "cash_flow_stability_score",
+    "profitability_score",
+    "leverage_score",
+    "governance_score",
+    "management_overlay_score",
+    "litigation_risk_score",
+    "sector_headwind_score",
+    "risk_flag_density",
+    "anomaly_score",
+    "promoter_risk_score",
+    "early_warning_score",
+    "gst_reconciliation_risk"
+  ],
+  "monotone_constraints": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "params": {
+    "n_estimators": 600,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "eval_metric": "logloss",
+    "early_stopping_rounds": 40
+  },
+  "training": {
+    "n": 8000,
+    "seed": 42,
+    "train": 5600,
+    "validation": 1200,
+    "test": 1200,
+    "data_sha256_16": "a3b3739d8ac9dd26"
+  },
+  "metrics": {
+    "test_roc_auc": 0.8318,
+    "test_brier": 0.0736,
+    "test_log_loss": 0.2529,
+    "test_ks": 0.5132,
+    "test_ece": 0.025,
+    "default_rate": 0.0976,
+    "best_iteration": 98
+  },
+  "explainability": "XGBoost TreeSHAP (pred_contribs) in log-odds units",
+  "caveat": "Trained on a simulated portfolio; recalibrate on real loan-performance data before production use."
+}

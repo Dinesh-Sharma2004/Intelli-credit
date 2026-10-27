@@ -1,2 +1,4 @@
-# Intelli-Credit Backend
+"""
+Intelli-Credit Backend
 Backend FastAPI application with microservices architecture
+"""

@@ -1,179 +1,204 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Layout } from '@/components/Layout'
-import { StatCard, Table, Badge } from '@/components/UI'
-import { Upload, FileText, CheckCircle } from 'lucide-react'
+import { Table, Badge, Alert } from '@/components/UI'
+import { Upload, FileText, AlertCircle, Loader, Download } from 'lucide-react'
+import { useDocumentUpload } from '@/hooks/useDocumentUpload'
+import { useCreditApplication } from '@/context/CreditApplicationContext'
 
 export default function DocumentUpload() {
-  const [uploadedFiles, _setUploadedFiles] = useState([
-    {
-      id: 1,
-      name: 'financial_statements_2024.pdf',
-      type: 'Financial Statement',
-      uploadTime: '2024-03-04 10:30',
-      status: 'PROCESSED',
-      confidence: 0.94,
-    },
-    {
-      id: 2,
-      name: 'gst_filing_2024.pdf',
-      type: 'GST Filing',
-      uploadTime: '2024-03-04 11:15',
-      status: 'PROCESSED',
-      confidence: 0.97,
-    },
-    {
-      id: 3,
-      name: 'bank_statement_march_2024.pdf',
-      type: 'Bank Statement',
-      uploadTime: '2024-03-04 12:00',
-      status: 'PROCESSED',
-      confidence: 0.91,
-    },
-  ])
-
+  const { uploadMultipleFiles, isUploading, uploadProgress, error, uploadedDocuments, clearError } = useDocumentUpload()
+  const { applicationDraft, setApplicationDraft, applicationId, snapshot } = useCreditApplication()
   const [dragActive, setDragActive] = useState(false)
+  const [localError, setLocalError] = useState<string | null>(null)
 
-  const tableRows = uploadedFiles.map((file) => [
+  useEffect(() => {
+    clearError()
+  }, [])
+
+  const handleFileUpload = async (files: File[]) => {
+    if (files.length === 0) return
+    if (!applicationDraft.borrower_name.trim()) {
+      setLocalError('Enter borrower details before uploading documents.')
+      return
+    }
+    try {
+      setLocalError(null)
+      await uploadMultipleFiles(files)
+    } catch (err) {
+      setLocalError(err instanceof Error ? err.message : 'Upload failed')
+    }
+  }
+
+  const tableRows = uploadedDocuments.map((file) => [
     <div key={`${file.id}-name`} className="flex items-center gap-2">
       <FileText size={16} className="text-blue-600" />
       {file.name}
     </div>,
     file.type,
-    file.uploadTime,
-    `${(file.confidence * 100).toFixed(1)}%`,
-    <Badge key={`${file.id}-status`} label={file.status} type="success" />,
+    `${(file.confidence || 0).toFixed(2)}`,
+    <Badge key={`${file.id}-status`} label={file.status} type={file.status === 'PROCESSED' ? 'success' : 'warning'} />,
   ])
 
   return (
     <Layout>
       <div className="space-y-8">
-        {/* Header Info */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900">Document Upload & Processing</h2>
-          <p className="text-gray-600 mt-2">Upload financial documents for OCR extraction and processing</p>
+          <h2 className="text-3xl font-bold" style={{ color: 'var(--text-primary)' }}>Document Upload & Processing</h2>
+          <p className="mt-2" style={{ color: 'var(--text-secondary)' }}>Upload borrower documents and let the backend classify and extract them.</p>
         </div>
 
-        {/* Upload Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <StatCard label="Total Documents" value={uploadedFiles.length} color="blue" icon={<FileText />} />
-          <StatCard
-            label="Processed"
-            value={uploadedFiles.filter((f) => f.status === 'PROCESSED').length}
-            color="green"
-            icon={<CheckCircle />}
+        {(error || localError) && (
+          <Alert
+            type="error"
+            title="Upload Error"
+            message={localError || error || 'Upload failed'}
+            icon={<AlertCircle size={16} />}
           />
-          <StatCard label="Avg Confidence" value={(0.94).toFixed(0)} unit="%" color="orange" />
-          <StatCard label="Processing Time" value="2.3" unit="min" color="blue" />
-        </div>
+        )}
 
-        {/* Upload Area */}
-        <div className="bg-white rounded-lg border border-gray-200 p-8 shadow-sm">
-          <div
-            className={`border-2 border-dashed rounded-lg p-12 text-center transition-colors ${
-              dragActive ? 'border-brand-blue bg-blue-50' : 'border-gray-300 hover:border-brand-blue'
-            }`}
-            onDragEnter={() => setDragActive(true)}
-            onDragLeave={() => setDragActive(false)}
-            onDrop={() => setDragActive(false)}
-          >
-            <Upload className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Drag and drop your documents</h3>
-            <p className="text-gray-600 mb-4">or click to select files</p>
-            <button className="bg-brand-blue hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-              Select Files
-            </button>
-            <p className="text-sm text-gray-500 mt-4">
-              Supported formats: PDF, Images (JPG, PNG), GST files, Bank statements
-            </p>
-          </div>
-        </div>
-
-        {/* Accepted File Types */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {[
-            { name: 'PDF Documents', icon: '📄', desc: 'Financial statements, bank statements' },
-            { name: 'Images', icon: '🖼️', desc: 'Scanned documents, receipts' },
-            { name: 'GST Filings', icon: '📊', desc: 'GSTR-1, 2A, 3B forms' },
-            { name: 'Bank Statements', icon: '🏦', desc: 'Current account, savings account' },
-          ].map((type) => (
-            <div
-              key={type.name}
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-4"
-            >
-              <div className="text-3xl mb-2">{type.icon}</div>
-              <h4 className="font-semibold text-gray-900">{type.name}</h4>
-              <p className="text-sm text-gray-600 mt-1">{type.desc}</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Active Borrower</h3>
+            <div className="space-y-4">
+              <input
+                value={applicationDraft.borrower_name}
+                onChange={(e) => {
+                  setLocalError(null)
+                  setApplicationDraft({ borrower_name: e.target.value })
+                }}
+                placeholder="Borrower name"
+                className="w-full px-4 py-3 border rounded-lg"
+              />
+              <input
+                value={applicationDraft.sector}
+                onChange={(e) => setApplicationDraft({ sector: e.target.value })}
+                placeholder="Sector"
+                className="w-full px-4 py-3 border rounded-lg"
+              />
+              <input
+                type="number"
+                value={applicationDraft.requested_amount || ''}
+                onChange={(e) => setApplicationDraft({ requested_amount: Number(e.target.value) })}
+                placeholder="Requested amount"
+                className="w-full px-4 py-3 border rounded-lg"
+              />
+              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                Application ID: {applicationId || 'Not created yet'}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
 
-        {/* Recent Uploads */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Uploads</h3>
-          <Table
-            headers={['File Name', 'Document Type', 'Upload Time', 'Confidence', 'Status']}
-            rows={tableRows}
-          />
-        </div>
-
-        {/* Processing Pipeline */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6">Document Processing Pipeline</h3>
-          <div className="space-y-4">
-            {[
-              { step: 1, name: 'File Upload', status: 'Completed', time: '< 1 second' },
-              { step: 2, name: 'OCR Extraction', status: 'Completed', time: '2.3 seconds' },
-              { step: 3, name: 'Language Detection', status: 'Completed', time: '0.8 seconds' },
-              { step: 4, name: 'Translation (if needed)', status: 'Completed', time: '3.1 seconds' },
-              { step: 5, name: 'NER Extraction', status: 'Completed', time: '1.5 seconds' },
-              { step: 6, name: 'Anomaly Detection', status: 'Completed', time: '0.9 seconds' },
-            ].map((item) => (
-              <div key={item.step} className="flex items-center gap-4 pb-4 border-b last:border-b-0">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-green-700 font-bold">{item.step}</span>
-                </div>
-                <div className="flex-1">
-                  <p className="font-medium text-gray-900">{item.name}</p>
-                  <p className="text-sm text-gray-600">Processing time: {item.time}</p>
-                </div>
-                <Badge label={item.status} type="success" />
-              </div>
-            ))}
+          <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Backend Processing Summary</h3>
+            <div className="space-y-3">
+              <p style={{ color: 'var(--text-secondary)' }}>Documents processed: {snapshot?.documents.length || 0}</p>
+              <p style={{ color: 'var(--text-secondary)' }}>Risk flags detected: {(snapshot?.documents || []).reduce((sum, doc) => sum + doc.risk_flags.length, 0)}</p>
+              <p style={{ color: 'var(--text-secondary)' }}>Research ready: {snapshot?.research_hits.length || 0} hits</p>
+            </div>
           </div>
         </div>
 
-        {/* Extraction Quality */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6">Extraction Quality Metrics</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { metric: 'OCR Accuracy', value: 94.5, unit: '%' },
-              { metric: 'Entity Recognition', value: 91.3, unit: '%' },
-              { metric: 'Data Completeness', value: 97.8, unit: '%' },
-              { metric: 'Anomaly Detection', value: 88.6, unit: '%' },
-            ].map((item) => (
-              <div key={item.metric} className="space-y-2">
-                <div className="flex justify-between">
-                  <p className="font-medium text-gray-900">{item.metric}</p>
-                  <p className="font-bold text-brand-blue">{item.value}{item.unit}</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="h-full rounded-full bg-brand-blue" style={{ width: `${item.value}%` }} />
-                </div>
-              </div>
-            ))}
+        <div className="rounded-lg border p-8 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+          <div
+            className={`border-2 border-dashed rounded-lg p-12 text-center transition-all duration-200 ${dragActive ? 'border-blue-500' : ''}`}
+            style={{ borderColor: dragActive ? 'rgb(59,130,246)' : 'var(--border-color)' }}
+            onDragEnter={(e) => {
+              e.preventDefault()
+              setDragActive(true)
+            }}
+            onDragLeave={(e) => {
+              e.preventDefault()
+              setDragActive(false)
+            }}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => {
+              e.preventDefault()
+              setDragActive(false)
+              handleFileUpload(Array.from(e.dataTransfer.files))
+            }}
+          >
+            {isUploading ? (
+              <>
+                <Loader className="mx-auto h-12 w-12 animate-spin" style={{ color: 'var(--brand-blue)' }} />
+                <p className="mt-4 font-semibold" style={{ color: 'var(--text-primary)' }}>
+                  Uploading to backend: {Math.round(uploadProgress)}%
+                </p>
+              </>
+            ) : (
+              <>
+                <Upload className="mx-auto h-12 w-12 mb-4" style={{ color: 'var(--text-secondary)' }} />
+                <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>Drop borrower files here</h3>
+                <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>PDF, CSV, JSON, and statement files are sent to the live backend.</p>
+                <label className="cursor-pointer inline-block font-semibold py-2 px-6 rounded-lg" style={{ backgroundColor: 'var(--brand-blue)', color: 'white' }}>
+                  Select Files
+                  <input
+                    type="file"
+                    multiple
+                    accept=".pdf,.csv,.json,.txt,.xlsx,.xls"
+                    className="hidden"
+                    onChange={(e) => handleFileUpload(Array.from(e.target.files || []))}
+                  />
+                </label>
+              </>
+            )}
           </div>
+          {!applicationDraft.borrower_name.trim() && (
+            <p className="text-sm mt-4" style={{ color: 'var(--text-secondary)' }}>
+              Add the borrower name above before uploading files so the backend can create the application correctly.
+            </p>
+          )}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex gap-4">
-          <button className="flex-1 bg-brand-blue hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
-            Process Selected Documents
-          </button>
-          <button className="flex-1 bg-white border border-gray-200 hover:border-brand-blue text-gray-900 font-semibold py-3 px-6 rounded-lg transition-all">
-            View Extraction Details
-          </button>
+        <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+          <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Live Uploaded Documents</h3>
+          {uploadedDocuments.length > 0 ? (
+            <Table headers={['File Name', 'Document Type', 'Confidence', 'Status']} rows={tableRows} />
+          ) : (
+            <p style={{ color: 'var(--text-secondary)' }}>No live documents yet.</p>
+          )}
         </div>
+
+        {snapshot?.documents && snapshot.documents.length > 0 && (
+          <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Backend Risk Flags</h3>
+            <div className="space-y-4">
+              {snapshot.documents.map((doc) => (
+                <div key={doc.id} className="rounded-lg p-4" style={{ backgroundColor: 'var(--bg-tertiary)' }}>
+                  <p className="font-semibold" style={{ color: 'var(--text-primary)' }}>{doc.document_name}</p>
+                  <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>{doc.document_type}</p>
+                  {(doc.risk_flags.length > 0 ? doc.risk_flags : ['No explicit risk flags']).map((flag) => (
+                    <div key={flag} className="text-sm" style={{ color: 'var(--text-secondary)' }}>• {flag}</div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <button
+          disabled={!snapshot?.documents?.length}
+          onClick={() => {
+            const rows = (snapshot?.documents || []).map((doc) => [
+              doc.document_name,
+              doc.document_type,
+              doc.confidence_score.toFixed(2),
+              doc.risk_flags.join('; '),
+            ])
+            const csv = [['Document Name', 'Document Type', 'Confidence', 'Risk Flags'], ...rows]
+              .map((row) => row.map((cell) => `"${cell}"`).join(','))
+              .join('\n')
+            const blob = new Blob([csv], { type: 'text/csv' })
+            const link = document.createElement('a')
+            link.href = URL.createObjectURL(blob)
+            link.download = 'document-processing-results.csv'
+            link.click()
+          }}
+          className="flex items-center gap-2 font-semibold py-3 px-6 rounded-lg"
+          style={{ backgroundColor: 'var(--brand-blue)', color: 'white', opacity: snapshot?.documents?.length ? 1 : 0.5 }}
+        >
+          <Download size={18} />
+          Export Live Results
+        </button>
       </div>
     </Layout>
   )

@@ -1,0 +1,1021 @@
+{
+  "input_files": [
+    "C:\\Users\\DINESH SHARMA\\Downloads\\fy24-annual-report-kinara-capital.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\Annual Report FY 2024-25.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\VCL-ANNUAL REPORT FINAL.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\Consolidated Annual report_FY 2022-23.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\1754051517.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\1754045722.pdf",
+    "C:\\Users\\DINESH SHARMA\\Downloads\\1756892129.pdf"
+  ],
+  "processed_documents_summary": {
+    "document_count": 8,
+    "document_mix": {
+      "annual_report": 4,
+      "sustainability_report": 1,
+      "generic_pdf": 3
+    },
+    "risk_flag_count": 6
+  },
+  "mixed_company_note": "The attached PDFs span multiple inferred companies; the scorecard below is a batch demo score, not a valid single-borrower underwriting decision.",
+  "inferred_companies": [
+    "886a938e-c6dd-49ad-ba3e-a51fb5de2486_1754051517",
+    "About Kinara Capital",
+    "Moneyboxx Capital Private Limited",
+    "Moneyboxx Finance Limited",
+    "Vivriti Capital",
+    "Vivriti Capital Limited",
+    "Vivriti Capital Private Limited"
+  ],
+  "documents": [
+    {
+      "document_name": "b209a6cb-be8c-483f-a28c-1589fdff0acc_fy24-annual-report-kinara-capital.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "confidence_score": 0.8,
+      "risk_flags": [
+        "Fraud wording detected"
+      ],
+      "metadata": {
+        "file_size": 50791917,
+        "page_count": 216,
+        "signals_expected": [
+          "auditor observations",
+          "debt profile",
+          "related party transactions",
+          "contingent liabilities"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "b209a6cb-be8c-483f-a28c-1589fdff0acc_fy24-annual-report-kinara-capital.pdf",
+        "currency_amounts_detected": [
+          "38",
+          ",",
+          "112",
+          "723",
+          "62",
+          "3,142",
+          "1,069",
+          "100",
+          ",",
+          "61",
+          ",",
+          ","
+        ],
+        "percentages_detected": [
+          "47",
+          "51",
+          "26",
+          "32",
+          "26",
+          "35",
+          "45",
+          "30",
+          "6251",
+          "22",
+          "43",
+          "18",
+          "25",
+          "21",
+          "37",
+          "29",
+          "103",
+          "30",
+          "42"
+        ],
+        "cin": null,
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "kinara",
+          "capital",
+          "business",
+          "financial",
+          "growth",
+          "overviewfinancial",
+          "statement",
+          "sstatutory",
+          "reports",
+          "india",
+          "management",
+          "corporat"
+        ]
+      },
+      "text_preview": "ANN UAL REPORT Table of Contents About Kinara Capital Letter From Founder & CEO 02 04 06 07 12Performance Highlights Our Presence Steadfast GrowthIntroduction 01 09 Our Leadership 11 Our Management Team Our Latest Ad Campaign Our Products HerVikas 22 Strategic Initiatives   Partnerships Technology Initiatives SOC 2 Certification Social ImpactESG In",
+      "inferred_company": "About Kinara Capital",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 0.0,
+        "overall_grounding": 0.6667
+      }
+    },
+    {
+      "document_name": "59f78558-2e28-4de5-9895-2eb27714e292_Annual Report FY 2024-25.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "confidence_score": 0.98,
+      "risk_flags": [
+        "NPA wording detected"
+      ],
+      "metadata": {
+        "file_size": 3836434,
+        "page_count": 309,
+        "signals_expected": [
+          "auditor observations",
+          "debt profile",
+          "related party transactions",
+          "contingent liabilities"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "59f78558-2e28-4de5-9895-2eb27714e292_Annual Report FY 2024-25.pdf",
+        "currency_amounts_detected": [
+          ",",
+          "6,382",
+          "7,470",
+          "211",
+          "200",
+          "209",
+          "9,081",
+          "9,081",
+          "1,363.9",
+          "220.0",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          "9,081.07",
+          "2,146.91",
+          "15,359.10",
+          "7,470",
+          "220.04",
+          "310",
+          "450",
+          "4,000",
+          "500"
+        ],
+        "percentages_detected": [
+          "16",
+          "30",
+          "2.82",
+          "11.95",
+          "3.12",
+          "12.11",
+          "26",
+          "10.7",
+          "1.89",
+          "0.71",
+          "202532",
+          "14",
+          "00013",
+          "16",
+          "14"
+        ],
+        "cin": "U65929TN2017PLC117196",
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "report",
+          "annual",
+          "financial",
+          "vivriti",
+          "capital",
+          "impact",
+          "india",
+          "statements",
+          "growth",
+          "sustainability",
+          "management",
+          "mid-market"
+        ]
+      },
+      "text_preview": "Table of Contents A. Company Overview B. Statutory Reports C. Financial StatementsPage No. Message from Managing Director Message from ChairpersonCorporate InformationAbout the Report About the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersSustainability & Impact JourneyCorporate Social Responsibility (CSR) during the Year AGM N",
+      "inferred_company": "Vivriti Capital",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    },
+    {
+      "document_name": "9579652f-20bc-4563-a714-8c1602bc780b_VCL-ANNUAL REPORT FINAL.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "confidence_score": 0.8,
+      "risk_flags": [
+        "NPA wording detected"
+      ],
+      "metadata": {
+        "file_size": 33042251,
+        "page_count": 354,
+        "signals_expected": [
+          "auditor observations",
+          "debt profile",
+          "related party transactions",
+          "contingent liabilities"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "9579652f-20bc-4563-a714-8c1602bc780b_VCL-ANNUAL REPORT FINAL.pdf",
+        "currency_amounts_detected": [
+          ",",
+          ",",
+          "550,661",
+          "656,835",
+          "50,000",
+          "19,126",
+          "7,82,983",
+          "13,99,833",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          "191",
+          "13,998",
+          "6,568",
+          "500",
+          "7,830",
+          "1,894",
+          "60",
+          "30,000",
+          "26.2",
+          "1.91",
+          "1.05"
+        ],
+        "percentages_detected": [
+          "82",
+          "34",
+          "3.12",
+          "12.11",
+          "48",
+          "48",
+          "1.09",
+          "0.46",
+          "57",
+          "21",
+          "34",
+          "38",
+          "48",
+          "48"
+        ],
+        "cin": null,
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "vivriti",
+          "capital",
+          "report",
+          "financial",
+          "india",
+          "lakhs",
+          "vivriticapital",
+          "business",
+          "growth",
+          "statements",
+          "through",
+          "project"
+        ]
+      },
+      "text_preview": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report ",
+      "inferred_company": "Vivriti Capital",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 0.9167,
+        "risk_flag_grounding": 0.0,
+        "overall_grounding": 0.6389
+      }
+    },
+    {
+      "document_name": "bde9885b-3119-4e39-8478-3fff9e8cd3e0_Consolidated Annual report_FY 2022-23.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "confidence_score": 0.98,
+      "risk_flags": [],
+      "metadata": {
+        "file_size": 20146589,
+        "page_count": 318,
+        "signals_expected": [
+          "auditor observations",
+          "debt profile",
+          "related party transactions",
+          "contingent liabilities"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "bde9885b-3119-4e39-8478-3fff9e8cd3e0_Consolidated Annual report_FY 2022-23.pdf",
+        "currency_amounts_detected": [
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ","
+        ],
+        "percentages_detected": [],
+        "cin": "U65929TN2017PLC117196",
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "meeting",
+          "members",
+          "companies",
+          "private",
+          "general",
+          "through",
+          "directors",
+          "resolution",
+          "vivriti",
+          "section",
+          "capital",
+          "notice"
+        ]
+      },
+      "text_preview": "VIVRITI CAPITAL LIMITED   (formerly known as Vivriti Capital Private Limited)     CIN: U65929TN2017PLC117196   REGD OFFICE: PRESTIGE ZACKRIA METROPOLITAN NO. 200/1 -8, 2ND FLOOR, BLOCK -1,  ANNASALAI, CHENNAI \u2013 600002, INDIA.       SHORTER NOTICE  is hereby given that the 6th Annual  General Meeting  of the shareholders  of  Vivriti Capital Limited",
+      "inferred_company": "Vivriti Capital Private Limited",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    },
+    {
+      "document_name": "a2ef25e6-a82e-49f3-a181-eed0c5123a00_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+      "document_type": "sustainability_report",
+      "category": "unstructured_esg",
+      "confidence_score": 0.8,
+      "risk_flags": [
+        "Default-related reference detected"
+      ],
+      "metadata": {
+        "file_size": 45750936,
+        "page_count": 104,
+        "signals_expected": [
+          "esg incidents",
+          "governance posture",
+          "supply chain resilience"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "a2ef25e6-a82e-49f3-a181-eed0c5123a00_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+        "currency_amounts_detected": [
+          ",",
+          ",",
+          ",",
+          ",",
+          "1",
+          ",",
+          ",",
+          "130",
+          "2.2",
+          "76.82",
+          ",",
+          "2",
+          "2",
+          "13.27",
+          "46.10",
+          "12",
+          "2.6",
+          "05",
+          "40.6",
+          "22.81",
+          "37.89",
+          "19.22",
+          ",",
+          ",",
+          "9.7"
+        ],
+        "percentages_detected": [
+          "21.8",
+          "30",
+          "25",
+          "30",
+          "26.31",
+          "65.35",
+          "34.64",
+          "0.50",
+          "0.10",
+          "13.40",
+          "32.70",
+          "4.20",
+          "12.90",
+          "36.30",
+          "39.80",
+          "6.40",
+          "2.40",
+          "14.30",
+          "37.20",
+          "92",
+          "50",
+          "100",
+          "90",
+          "80",
+          "25"
+        ],
+        "cin": null,
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "vivriti",
+          "impact",
+          "sustainability",
+          "report",
+          "sustainable",
+          "assurance",
+          "capital",
+          "last-mile",
+          "rooted",
+          "trajectory",
+          "certificate",
+          "financial"
+        ]
+      },
+      "text_preview": "VIVRITI GROUP SUSTAINABILITY REPORT 2024-25 AMPLIFYING LAST-MILEIMPACT 01SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE TABLE OF CONTENTS 02 20 4103 07 12 68 85 96 100 10148 PRO",
+      "inferred_company": "Vivriti Capital Limited",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    },
+    {
+      "document_name": "886a938e-c6dd-49ad-ba3e-a51fb5de2486_1754051517.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "confidence_score": 0.7,
+      "risk_flags": [],
+      "metadata": {
+        "file_size": 305365,
+        "page_count": 2,
+        "signals_expected": [
+          "title extraction",
+          "key entity discovery"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "886a938e-c6dd-49ad-ba3e-a51fb5de2486_1754051517.pdf",
+        "currency_amounts_detected": [],
+        "percentages_detected": [
+          "55.22",
+          "21.08",
+          "52.92",
+          "40.53",
+          "93.45",
+          "52.79",
+          "50.25",
+          "36.65"
+        ],
+        "cin": null,
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "total",
+          "amount",
+          "liquidity",
+          "liabilities",
+          "management",
+          "crore",
+          "office",
+          "andheri",
+          "significant",
+          "deposits",
+          "borrowings",
+          "india"
+        ]
+      },
+      "text_preview": "Corp orate  Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002   Head Office - 411A, Kanakia Wallstreet,  Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093    Public Disclosure on Liquidity Risk as on June  30, 202 5  {Pursuant to RBI Master Direction \u2013 Reserve Bank of India  (Non -Banking Financia",
+      "inferred_company": "886a938e-c6dd-49ad-ba3e-a51fb5de2486_1754051517",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    },
+    {
+      "document_name": "d983c538-3499-43e0-8e37-9244d014b687_1754045722.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "confidence_score": 0.98,
+      "risk_flags": [],
+      "metadata": {
+        "file_size": 522270,
+        "page_count": 15,
+        "signals_expected": [
+          "title extraction",
+          "key entity discovery"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "d983c538-3499-43e0-8e37-9244d014b687_1754045722.pdf",
+        "currency_amounts_detected": [
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "1"
+        ],
+        "percentages_detected": [],
+        "cin": null,
+        "pan": "AJAPG4148C",
+        "gstin": null,
+        "keywords": [
+          "shares",
+          "total",
+          "securities",
+          "shareholding",
+          "number",
+          "convertible",
+          "promoter",
+          "warrants",
+          "outstanding",
+          "underlying",
+          "equity",
+          "voting"
+        ]
+      },
+      "text_preview": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / e",
+      "inferred_company": "Moneyboxx Capital Private Limited",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    },
+    {
+      "document_name": "4acc0c26-ca07-4c5b-b2c4-955051a0fa60_1756892129.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "confidence_score": 0.8,
+      "risk_flags": [
+        "Default-related reference detected",
+        "NPA wording detected"
+      ],
+      "metadata": {
+        "file_size": 18394305,
+        "page_count": 159,
+        "signals_expected": [
+          "title extraction",
+          "key entity discovery"
+        ],
+        "ocr_required": false,
+        "ocr_strategy": "native_pdf_text_or_existing_ocr_services"
+      },
+      "structured_data": {
+        "document_label": "4acc0c26-ca07-4c5b-b2c4-955051a0fa60_1756892129.pdf",
+        "currency_amounts_detected": [
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          ",",
+          "163",
+          ",",
+          ",",
+          ",",
+          "50"
+        ],
+        "percentages_detected": [
+          "100",
+          "57",
+          "6.5",
+          "20",
+          "13",
+          "16",
+          "27",
+          "56",
+          "60",
+          "6.6",
+          "3.4",
+          "50",
+          "65",
+          "3.0",
+          "3.1",
+          "6.5",
+          "11.0",
+          "20.2",
+          "10.7",
+          "27.0",
+          "11.6",
+          "28.7",
+          "8.8",
+          "42",
+          "32"
+        ],
+        "cin": null,
+        "pan": null,
+        "gstin": null,
+        "keywords": [
+          "financial",
+          "credit",
+          "lending",
+          "growth",
+          "report",
+          "through",
+          "corporate",
+          "statements",
+          "statutory",
+          "model",
+          "reports",
+          "digital"
+        ]
+      },
+      "text_preview": "Trusted  Lending.  Boundless Reach.Integrated Report   2024-25  Trusted Lending. Boundless Reach.  1 About the Repor t  2 Contribution to UN SDGs  6 Letter fr om the Co-Founders  8 About Mone yboxx  10 A wards  13 Operating Context  14 Strateg y  17 Stak eholder Engagement  20 Risk Mitigation  22 V alue Creation Model  26 Financial Ca pital  28 Man",
+      "inferred_company": "Moneyboxx Finance Limited",
+      "grounding_metrics": {
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 0.0,
+        "overall_grounding": 0.6667
+      }
+    }
+  ],
+  "compliance_matrix": [
+    {
+      "document_name": "b209a6cb-be8c-483f-a28c-1589fdff0acc_fy24-annual-report-kinara-capital.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "problem_statement_pillars": [
+        "data_ingestor",
+        "recommendation_engine"
+      ],
+      "indian_regulations": [
+        "Companies Act 2013",
+        "MCA annual filing framework",
+        "Ind AS / Schedule III",
+        "SEBI LODR (if listed)"
+      ],
+      "expected_signals": [
+        "auditor observations",
+        "debt profile",
+        "related party transactions",
+        "contingent liabilities"
+      ]
+    },
+    {
+      "document_name": "59f78558-2e28-4de5-9895-2eb27714e292_Annual Report FY 2024-25.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "problem_statement_pillars": [
+        "data_ingestor",
+        "recommendation_engine"
+      ],
+      "indian_regulations": [
+        "Companies Act 2013",
+        "MCA annual filing framework",
+        "Ind AS / Schedule III",
+        "SEBI LODR (if listed)"
+      ],
+      "expected_signals": [
+        "auditor observations",
+        "debt profile",
+        "related party transactions",
+        "contingent liabilities"
+      ]
+    },
+    {
+      "document_name": "9579652f-20bc-4563-a714-8c1602bc780b_VCL-ANNUAL REPORT FINAL.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "problem_statement_pillars": [
+        "data_ingestor",
+        "recommendation_engine"
+      ],
+      "indian_regulations": [
+        "Companies Act 2013",
+        "MCA annual filing framework",
+        "Ind AS / Schedule III",
+        "SEBI LODR (if listed)"
+      ],
+      "expected_signals": [
+        "auditor observations",
+        "debt profile",
+        "related party transactions",
+        "contingent liabilities"
+      ]
+    },
+    {
+      "document_name": "bde9885b-3119-4e39-8478-3fff9e8cd3e0_Consolidated Annual report_FY 2022-23.pdf",
+      "document_type": "annual_report",
+      "category": "unstructured_financial",
+      "problem_statement_pillars": [
+        "data_ingestor",
+        "recommendation_engine"
+      ],
+      "indian_regulations": [
+        "Companies Act 2013",
+        "MCA annual filing framework",
+        "Ind AS / Schedule III",
+        "SEBI LODR (if listed)"
+      ],
+      "expected_signals": [
+        "auditor observations",
+        "debt profile",
+        "related party transactions",
+        "contingent liabilities"
+      ]
+    },
+    {
+      "document_name": "a2ef25e6-a82e-49f3-a181-eed0c5123a00_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+      "document_type": "sustainability_report",
+      "category": "unstructured_esg",
+      "problem_statement_pillars": [
+        "research_agent",
+        "recommendation_engine"
+      ],
+      "indian_regulations": [
+        "BRSR / SEBI ESG disclosures",
+        "environmental and labor compliance"
+      ],
+      "expected_signals": [
+        "esg incidents",
+        "governance posture",
+        "supply chain resilience"
+      ]
+    },
+    {
+      "document_name": "886a938e-c6dd-49ad-ba3e-a51fb5de2486_1754051517.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "problem_statement_pillars": [
+        "data_ingestor"
+      ],
+      "indian_regulations": [
+        "manual review required"
+      ],
+      "expected_signals": [
+        "title extraction",
+        "key entity discovery"
+      ]
+    },
+    {
+      "document_name": "d983c538-3499-43e0-8e37-9244d014b687_1754045722.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "problem_statement_pillars": [
+        "data_ingestor"
+      ],
+      "indian_regulations": [
+        "manual review required"
+      ],
+      "expected_signals": [
+        "title extraction",
+        "key entity discovery"
+      ]
+    },
+    {
+      "document_name": "4acc0c26-ca07-4c5b-b2c4-955051a0fa60_1756892129.pdf",
+      "document_type": "generic_pdf",
+      "category": "unclassified",
+      "problem_statement_pillars": [
+        "data_ingestor"
+      ],
+      "indian_regulations": [
+        "manual review required"
+      ],
+      "expected_signals": [
+        "title extraction",
+        "key entity discovery"
+      ]
+    }
+  ],
+  "research_hits": [
+    {
+      "source_name": "MCA",
+      "title": "MCA corporate profile for Attached PDF Batch Demo",
+      "source_url": "https://www.mca.gov.in/",
+      "finding_type": "registry",
+      "summary": "Track CIN, charge filings, director changes, annual filing timeliness, and incorporation status.",
+      "sentiment": "neutral",
+      "severity": "medium",
+      "payload": {
+        "timestamp": "2026-03-15T13:27:17.059753+00:00",
+        "recommended_checks": [
+          "master data",
+          "charges",
+          "annual returns",
+          "director KYC"
+        ]
+      }
+    },
+    {
+      "source_name": "e-Courts",
+      "title": "Litigation sweep for Attached PDF Batch Demo",
+      "source_url": "https://ecourts.gov.in/",
+      "finding_type": "litigation",
+      "summary": "Search pending civil, commercial, labor, recovery, NCLT, and IBC matters for borrower and promoters.",
+      "sentiment": "negative",
+      "severity": "high",
+      "payload": {
+        "timestamp": "2026-03-15T13:27:17.059964+00:00",
+        "early_warning_signals": [
+          "recovery suits",
+          "wilful default petitions",
+          "IBC admission risk"
+        ]
+      }
+    },
+    {
+      "source_name": "RBI",
+      "title": "Regulatory scan for sector: Corporate lending demo",
+      "source_url": "https://www.rbi.org.in/",
+      "finding_type": "sector_regulation",
+      "summary": "Map sector headwinds to RBI circulars, prudential norms, concentration guidance, and NBFC liquidity conditions.",
+      "sentiment": "neutral",
+      "severity": "medium",
+      "payload": {
+        "timestamp": "2026-03-15T13:27:17.059989+00:00",
+        "focus_areas": [
+          "regulatory tightening",
+          "capital controls",
+          "interest-rate sensitivity"
+        ]
+      }
+    },
+    {
+      "source_name": "News",
+      "title": "Promoter and borrower media scan for Attached PDF Batch Demo",
+      "source_url": "https://news.google.com/",
+      "finding_type": "media",
+      "summary": "Review local news for governance issues, fraud allegations, capacity expansion, layoffs, and sector stress.",
+      "sentiment": "neutral",
+      "severity": "medium",
+      "payload": {
+        "timestamp": "2026-03-15T13:27:17.060123+00:00",
+        "watchlist": [
+          "fraud",
+          "ED/CBI action",
+          "plant shutdown",
+          "rating downgrade"
+        ]
+      }
+    }
+  ],
+  "compliance_checks": [
+    {
+      "regulation_code": "GST-RECON",
+      "regulation_name": "GST Reconciliation - GSTR-1 vs GSTR-2A/2B vs GSTR-3B",
+      "applicability": "core",
+      "status": "pending_review",
+      "rationale": "Required when GST filings or GST references exist to detect inflated turnover and circular trading.",
+      "evidence": []
+    },
+    {
+      "regulation_code": "MCA-FILING",
+      "regulation_name": "Companies Act 2013 / MCA Annual Filing Review",
+      "applicability": "core",
+      "status": "evidence_mapped",
+      "rationale": "Validate incorporation status, annual returns, charges, and director changes for all corporate borrowers.",
+      "evidence": [
+        "b209a6cb-be8c-483f-a28c-1589fdff0acc_fy24-annual-report-kinara-capital.pdf",
+        "59f78558-2e28-4de5-9895-2eb27714e292_Annual Report FY 2024-25.pdf",
+        "9579652f-20bc-4563-a714-8c1602bc780b_VCL-ANNUAL REPORT FINAL.pdf",
+        "bde9885b-3119-4e39-8478-3fff9e8cd3e0_Consolidated Annual report_FY 2022-23.pdf",
+        "MCA corporate profile for Attached PDF Batch Demo"
+      ]
+    },
+    {
+      "regulation_code": "RBI-KYC-AML",
+      "regulation_name": "RBI KYC, AML, and fraud-monitoring expectations",
+      "applicability": "core",
+      "status": "pending_review",
+      "rationale": "Bank statement and related-party flow analysis should support AML-style exception detection.",
+      "evidence": []
+    },
+    {
+      "regulation_code": "LIT-SEARCH",
+      "regulation_name": "e-Courts / NCLT / IBC litigation search",
+      "applicability": "core",
+      "status": "evidence_mapped",
+      "rationale": "Secondary research must identify legal disputes and insolvency signals.",
+      "evidence": [
+        "Litigation sweep for Attached PDF Batch Demo"
+      ]
+    },
+    {
+      "regulation_code": "CRA-RATING",
+      "regulation_name": "Credit rating agency report review",
+      "applicability": "conditional",
+      "status": "not_applicable",
+      "rationale": "Applicable when external rating reports are available or the borrower is rated.",
+      "evidence": []
+    }
+  ],
+  "scorecard": {
+    "model_version": "pdf-grounded-hybrid-credit-model-v2",
+    "probability_of_default": 0.02,
+    "risk_grade": "A",
+    "recommended_limit": 162628256.0,
+    "recommended_rate": 0.092,
+    "decision": "approve",
+    "score_breakdown": {
+      "character": 0.591,
+      "capacity": 0.688,
+      "capital": 0.44,
+      "collateral": 0.82,
+      "conditions": 0.36
+    },
+    "shap_explanation": [
+      {
+        "feature": "Litigation risk",
+        "contribution": 0.1488,
+        "impact": "negative_to_credit"
+      },
+      {
+        "feature": "Sector headwinds",
+        "contribution": 0.0704,
+        "impact": "negative_to_credit"
+      },
+      {
+        "feature": "Governance",
+        "contribution": -0.0423,
+        "impact": "positive_to_credit"
+      },
+      {
+        "feature": "Risk-flag density",
+        "contribution": 0.0356,
+        "impact": "negative_to_credit"
+      },
+      {
+        "feature": "Cash-flow stability",
+        "contribution": -0.0352,
+        "impact": "positive_to_credit"
+      },
+      {
+        "feature": "Management overlay",
+        "contribution": -0.0301,
+        "impact": "positive_to_credit"
+      },
+      {
+        "feature": "GST consistency",
+        "contribution": -0.008,
+        "impact": "positive_to_credit"
+      },
+      {
+        "feature": "Profitability quality",
+        "contribution": -0.0,
+        "impact": "positive_to_credit"
+      }
+    ],
+    "feature_vector": {
+      "document_coverage_score": 1.0,
+      "identifier_coverage_score": 0.25,
+      "amount_signal_score": 1.0,
+      "gst_consistency_score": 0.54,
+      "cash_flow_stability_score": 0.66,
+      "profitability_score": 0.5,
+      "leverage_score": 0.38,
+      "litigation_risk_score": 0.62,
+      "governance_score": 0.8024,
+      "management_overlay_score": 0.715,
+      "sector_headwind_score": 0.64,
+      "esg_adjustment_score": 0.18,
+      "risk_flag_density": 0.1875,
+      "reported_revenue_proxy_cr": 438099.6375,
+      "liquidity_proxy_cr": 337150.576,
+      "derived_exposure_cr": 25.0
+    },
+    "explanation_summary": "Decision APPROVE with PD 2.00%. The recommendation is grounded in extracted PDF evidence including revenue/liquidity cues, risk-flag density, regulatory/litigation references, and governance indicators. Primary drivers: Litigation risk (negative_to_credit), Sector headwinds (negative_to_credit), Governance (positive_to_credit)."
+  },
+  "xgboost_style_explainability_accuracy": {
+    "base_pd": 0.02,
+    "directional_faithfulness": 1,
+    "top3_overlap_with_recomputed_explanations": 1.0
+  },
+  "transformer_extraction_accuracy_proxy": {
+    "documents_evaluated": 8,
+    "average_identifier_grounding": 1.0,
+    "average_keyword_grounding": 0.9896,
+    "average_risk_flag_grounding": 0.625,
+    "average_overall_grounding": 0.8715
+  }
+}

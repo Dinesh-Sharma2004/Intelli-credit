@@ -175,6 +175,7 @@ class AdvancedOCREngine:
         
         return full_text, avg_confidence
 
+@router.post("/advanced", response_model=AdvancedOCRResponse)
 @router.post("/ocr/advanced", response_model=AdvancedOCRResponse)
 async def perform_advanced_ocr(
     file: UploadFile = File(...),
@@ -248,6 +249,7 @@ async def perform_advanced_ocr(
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"OCR processing failed: {str(e)}")
 
+@router.get("/languages")
 @router.get("/ocr/languages")
 async def get_supported_languages():
     """Get list of supported languages for OCR"""
@@ -259,6 +261,7 @@ async def get_supported_languages():
         "note": "EasyOCR supports 80+ languages. Use standard ISO 639-1 codes."
     }
 
+@router.post("/batch")
 @router.post("/ocr/batch")
 async def batch_ocr_processing(
     files: List[UploadFile] = File(...),

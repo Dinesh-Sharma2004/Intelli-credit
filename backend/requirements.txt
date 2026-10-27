@@ -1,26 +1,76 @@
+# Core ML/AI Frameworks
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# NLP and Transformers
+transformers==4.35.2
+tokenizers==0.14.1
+sentencepiece==0.2.0
+sentence-transformers==2.2.2
+
+# Multilingual OCR and Translation (IndicTrOCR & IndicTrans2)
+# Note: These should be installed from source:
+# git clone https://github.com/AI4Bharat/IndicTrOCR backend/models/indic_trocr
+# git clone https://github.com/AI4Bharat/IndicTrans2 backend/models/indictrans2
+
+# Image Processing
+pillow==10.1.0
+opencv-python==4.9.0.80
+scikit-image>=0.21.0
+
+# Database
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+alembic>=1.12.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.24.3
+scipy>=1.11.0
+scikit-learn==1.3.2
+
+# API and Web Framework
 fastapi==0.109.0
 uvicorn==0.27.0
 python-multipart==0.0.6
 pydantic==2.5.3
 pydantic-settings==2.1.0
+Flask>=3.0.0
+Flask-Cors>=4.0.0
+
+# Document Processing
 python-docx==0.8.11
+reportlab>=4.0.0
 PyPDF2==3.0.1
-opencv-python==4.9.0.80
 pytesseract==0.3.10
-pillow==10.1.0
-scikit-learn==1.3.2
-xgboost==2.0.3
-shap==0.45.0
-numpy==1.24.3
-pandas==2.1.4
-requests==2.31.0
 beautifulsoup4==4.12.2
 lxml==4.9.4
-transformers==4.36.2
-torch==2.1.2
-sentence-transformers==2.2.2
+
+# ML/Analytics
+xgboost==2.0.3
+shap==0.45.0
+joblib==1.3.2
+
+# Semantic Search
 chromadb==0.4.24
 langchain==0.1.10
+
+# Authentication
 python-jose==3.3.0
+
+# Visualization
 plotly==5.18.0
-joblib==1.3.2
+
+# Utilities
+requests==2.31.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+tqdm>=4.66.0
+typing-extensions>=4.7.0
+
+# Development
+pytest>=7.4.0
+black>=23.10.0
+flake8>=6.1.0
+mypy>=1.5.0

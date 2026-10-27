@@ -1,0 +1,830 @@
+{
+  "timestamp": "2026-03-04T17:32:48.343670",
+  "max_samples_per_language": 5,
+  "language_results": {
+    "bengali": {
+      "language": "bengali",
+      "language_code": "ben",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "ব্যাংক অ্যাকাউন্ট নম্বর 77889900 জমা করুন",
+          "reference": "Deposit in bank account number 77889900",
+          "translated": "অ্যাকাউন্ট ব্যাংক নম্বর 77889900 জমা করুন",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "গ্যাস বিল নম্বর 334455 পরিমাণ 3800 টাকা",
+          "reference": "Gas bill number 334455 amount 3800 rupees",
+          "translated": "গ্যাস বিল নম্বর পরিমাণ 3800 টাকা",
+          "bleu_like_score": 0.0583,
+          "ter_score": 0.8571,
+          "status": "success"
+        },
+        {
+          "source": "জিএসটি নিবন্ধন 19AACHP7777R1Z3 বৈধ",
+          "reference": "GST registration 19AACHP7777R1Z3 is valid",
+          "translated": "জিএসটি নিবন্ধন 19AACHP7777R1Z3 বৈx",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "আইনি মামলা 2024-DEF-2222 নিবন্ধিত",
+          "reference": "Legal case 2024-DEF-2222 registered",
+          "translated": "আইনি মামলা 2024-DEF-2222 নিবন্ধিত",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "বার্ষিক আয় প্রতিবেদন মোট 95000 টাকা",
+          "reference": "Annual income report total 95000 rupees",
+          "translated": "আয় বার্ষিক প্রতিবেদন মোট 95000 টাকা",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.05833333333333333,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.8571428571428571,
+          0.8,
+          0.75,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0805,
+      "average_ter": 0.8481,
+      "bleu_range": [
+        0.0583,
+        0.1167
+      ],
+      "ter_range": [
+        0.75,
+        1.0
+      ]
+    },
+    "gujarati": {
+      "language": "gujarati",
+      "language_code": "guj",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "બેંક ખાતા નંબર 44556677 માટે ડિપોઝિટ કરો",
+          "reference": "Deposit for bank account number 44556677",
+          "translated": "બેંક ખાતા નંબર માટે ડિપોઝિટ કરો",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ગેસ બીલ નંબર 556677 રકમ 4200 રુપિયા",
+          "reference": "Gas bill number 556677 amount 4200 rupees",
+          "translated": "બીલ ગેસ નંબર 556677 રકમ 4200 રુપિયા",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "જીએસટી નોંધણી 24AAXPK5656R1Z1 માન્ય છે",
+          "reference": "GST registration 24AAXPK5656R1Z1 is valid",
+          "translated": "નોંધણી 24AAXPK5656R1Z1 માન્ય છે",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "કાયદાકીય કેસ 2024-PQR-1111 નોંધાયેલ છે",
+          "reference": "Legal case 2024-PQR-1111 registered",
+          "translated": "કાયદાકીય કેસ નોંધાયેલ છે",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "વાર્ષિક આવક રિપોર્ટ કુલ 1,80,000 રુપિયા",
+          "reference": "Annual income report total 1,80,000 rupees",
+          "translated": "વાર્ષિક આવક રિપોર્ટ કુલ 1,80,000 રુપિયા",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.0,
+          0.13999999999999999,
+          0.0875,
+          0.0,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          0.8,
+          1.0,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0595,
+      "average_ter": 0.8695,
+      "bleu_range": [
+        0.0,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    },
+    "hindi": {
+      "language": "hindi",
+      "language_code": "hin",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "गैस बिल नंबर 12345 की राशि 5000 रुपये है",
+          "reference": "Gas bill number 12345 is for 5000 rupees",
+          "translated": "गैस बिल नंबर 12345 की राशx 5000 रुपये है",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.875,
+          "status": "success"
+        },
+        {
+          "source": "बैंक खाता नंबर 98765432 में जमा करें",
+          "reference": "Deposit in bank account number 98765432",
+          "translated": "बैंक खाता नंबर 98765432 जमा में करें",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "जीएसटी पंजीकरण संख्या 27AAPCU9603R1Z5 वैध है",
+          "reference": "GST registration number 27AAPCU9603R1Z5 is valid",
+          "translated": "जीएसटी पंजीकरण संख्या 27AAPCU9603R1Z5 वैध है",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        },
+        {
+          "source": "कानूनी मामला दिनांक 15 मार्च 2024 को दर्ज किया गया",
+          "reference": "Legal case registered on March 15 2024",
+          "translated": "कानूनी मामला दिनांक 15 मार्च 2024 को दर्ज किया गयx",
+          "bleu_like_score": 0.14,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "वार्षिक रिपोर्ट में कुल लाभ 1,50,000 रुपये दिखाया ...",
+          "reference": "Annual report shows total profit of 1,50,000 rupee...",
+          "translated": "वार्षिक रिपोर्ट में कुल लाभ रुपये 1,50,000 दिखाया ...",
+          "bleu_like_score": 0.05,
+          "ter_score": 1.0,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.11666666666666665,
+          0.06999999999999999,
+          0.06999999999999999,
+          0.13999999999999999,
+          0.049999999999999996
+        ],
+        "ter": [
+          0.875,
+          1.0,
+          0.8333333333333334,
+          1.0,
+          1.0
+        ]
+      },
+      "average_bleu": 0.0893,
+      "average_ter": 0.9417,
+      "bleu_range": [
+        0.05,
+        0.14
+      ],
+      "ter_range": [
+        0.8333,
+        1.0
+      ]
+    },
+    "kannada": {
+      "language": "kannada",
+      "language_code": "kan",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "ಬ್ಯಾಂಕ್ ಖಾತೆ ಸಂಖ್ಯೆ 88776655 ಠೇವಣಿ ಮಾಡಿ",
+          "reference": "Deposit in bank account number 88776655",
+          "translated": "ಬ್ಯಾಂಕ್ ಖಾತೆ ಸಂಖ್ಯೆ 88776655 ಮಾಡಿ ಠೇವಣಿ",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ಗ್ಯಾಸ್ ಬಿಲ್ ಸಂಖ್ಯೆ 778899 ಮೊತ್ತ 3200 ರೂಪಾಯಿ",
+          "reference": "Gas bill number 778899 amount 3200 rupees",
+          "translated": "ಬಿಲ್ ಗ್ಯಾಸ್ ಸಂಖ್ಯೆ 778899 ಮೊತ್ತ 3200 ರೂಪಾಯಿ",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "ಜಿಎಸ್ಟಿ ನೋಂದಣಿ 29AAFPK9999R1Z5 ಮಾನ್ಯ",
+          "reference": "GST registration 29AAFPK9999R1Z5 is valid",
+          "translated": "ಜಿಎಸ್ಟಿ ನೋಂದಣಿ ಮಾನ್ಯ",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ಕಾನೂನು ಪ್ರಕರಣ 2024-JKL-4444 ನೋಂದಾಯಿತ",
+          "reference": "Legal case 2024-JKL-4444 registered",
+          "translated": "ಕಾನೂನು ಪ್ರಕರಣ ನೋಂದಾಯಿತ 2024-JKL-4444",
+          "bleu_like_score": 0.1167,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ವಾರ್ಷಿಕ ಆದಾಯ ವರದಿ ಒಟ್ಟು 1,25,000 ರೂಪಾಯಿ",
+          "reference": "Annual income report total 1,25,000 rupees",
+          "translated": "ವಾರ್ಷಿಕ ಆದಾಯ ವರದಿ ಒಟ್ಟx 1,25,000 ರೂಪಾಯಿ",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.13999999999999999,
+          0.0,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          1.0,
+          1.0,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0793,
+      "average_ter": 0.9095,
+      "bleu_range": [
+        0.0,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    },
+    "malayalam": {
+      "language": "malayalam",
+      "language_code": "mal",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "ബാങ്ക് അക്കൗണ്ട് നമ്പർ 66554433 നിക്ഷേപിക്കുക",
+          "reference": "Deposit in bank account number 66554433",
+          "translated": "ബാങ്ക് അക്കൗണ്ട് നമ്പർ 66554433",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        },
+        {
+          "source": "ഗ്യാസ് ബിൽ നമ്പർ 665544 തുക 3600 രൂപ",
+          "reference": "Gas bill number 665544 amount 3600 rupees",
+          "translated": "ഗ്യാസ് ബിൽ നമ്പർ 665544 തുക രൂപ 3600",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.8571,
+          "status": "success"
+        },
+        {
+          "source": "ജിഎസ്ടി രജിസ്ട്രേഷൻ 32AADPK1010R1Z6 സാധുതയുള്ള",
+          "reference": "GST registration 32AADPK1010R1Z6 is valid",
+          "translated": "ജിഎസ്ടി രജിസ്ട്രേഷx 32AADPK1010R1Z6 സാധുതയുള്ള",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "നിയമ സ്വതന്ത്ര കേസ് 2024-MNO-5555 രജിസ്റ്റർ ചെയ്യപ...",
+          "reference": "Legal case 2024-MNO-5555 registered",
+          "translated": "നിയമ സ്വതന്ത്ര കേസ് 2024-MNO-5555 ചെയ്യപ്പെട്ടത് ര...",
+          "bleu_like_score": 0.1167,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "വാർഷിക വരുമാന റിപ്പോർട്ട് ആകെ 1,30,000 രൂപ",
+          "reference": "Annual income report total 1,30,000 rupees",
+          "translated": "വാർഷിക റിപ്പോർട്ട് ആകെ 1,30,000 രൂപ",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.13999999999999999,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          0.8333333333333334,
+          0.8571428571428571,
+          0.8,
+          1.0,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0968,
+      "average_ter": 0.8648,
+      "bleu_range": [
+        0.07,
+        0.14
+      ],
+      "ter_range": [
+        0.8,
+        1.0
+      ]
+    },
+    "marathi": {
+      "language": "marathi",
+      "language_code": "mar",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "बँक खाते क्रमांक 99001122 जमा करा",
+          "reference": "Deposit in bank account number 99001122",
+          "translated": "बँक खाते क्रमांक 9900112x जमा करा",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "गॅस बिल क्रमांक 112233 रक्कम 4500 रुपये",
+          "reference": "Gas bill number 112233 amount 4500 rupees",
+          "translated": "गॅस बिल क्रमांक 11223x रक्कम 4500 रुपये",
+          "bleu_like_score": 0.0583,
+          "ter_score": 0.8571,
+          "status": "success"
+        },
+        {
+          "source": "जीएसटी नोंदणी 27AABCD8888R1Z4 वैध",
+          "reference": "GST registration 27AABCD8888R1Z4 is valid",
+          "translated": "जीएसटx नोंदणी 27AABCD8888R1Z4 वैध",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "कायदेशीर प्रकरण 2024-GHI-3333 नोंदणीकृत",
+          "reference": "Legal case 2024-GHI-3333 registered",
+          "translated": "कायदेशीर 2024-GHI-3333 नोंदणीकृत",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "वार्षिक उत्पन्न अहवाल एकूण 1,10,000 रुपये",
+          "reference": "Annual income report total 1,10,000 rupees",
+          "translated": "वार्षिक अहवाल एकूण 1,10,000 रुपये",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.0,
+          0.05833333333333333,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.8571428571428571,
+          0.8,
+          0.75,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0665,
+      "average_ter": 0.8481,
+      "bleu_range": [
+        0.0,
+        0.1167
+      ],
+      "ter_range": [
+        0.75,
+        1.0
+      ]
+    },
+    "odia": {
+      "language": "odia",
+      "language_code": "odi",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "ବ୍ୟାଙ୍କ ଆକାଉଂଟ ସଂଖ୍ୟା 44332211 ଜମା ଦିଅନ୍ତୁ",
+          "reference": "Deposit in bank account number 44332211",
+          "translated": "ବ୍ୟାଙ୍କ ଆକାଉଂx ସଂଖ୍ୟା 44332211 ଜମା ଦିଅନ୍ତୁ",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ଗ୍ୟାସ ବିଲ୍ ସଂଖ୍ୟା 443322 ରାଶି 2900 ଟଙ୍କା",
+          "reference": "Gas bill number 443322 amount 2900 rupees",
+          "translated": "ଗ୍ୟାସ ସଂଖ୍ୟା ବିଲ୍ 443322 ରାଶି 2900 ଟଙ୍କା",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "ଜିଏସଟି ରେଜିଷ୍ଟ୍ରେସନ 21AADPO3030R1Z8 ବୈଧ",
+          "reference": "GST registration 21AADPO3030R1Z8 is valid",
+          "translated": "ଜିଏସଟି ରେଜିଷ୍ଟ୍ରେସନ 21AADPO3030R1Z8 ବୈx",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "ଆଇନଗତ ଯଗ୍ 2024-STU-7777 ଦାଖିଲ",
+          "reference": "Legal case 2024-STU-7777 registered",
+          "translated": "ଆଇନଗx ଯଗ୍ 2024-STU-7777 ଦାଖିଲ",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "ବାର୍ଷିକ ଆୟ ରିପୋର୍ଟ ମୋଟ 92000 ଟଙ୍କା",
+          "reference": "Annual income report total 92000 rupees",
+          "translated": "ବାର୍ଷିକ ଆୟ ରିପୋର୍ଟ 92000 ଟଙ୍କା",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.13999999999999999,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          0.8,
+          0.75,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0968,
+      "average_ter": 0.8195,
+      "bleu_range": [
+        0.07,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    },
+    "punjabi": {
+      "language": "punjabi",
+      "language_code": "pan",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "ਬੈਂਕ ਖਾਤਾ ਨੰਬਰ 55443322 ਜਮਾ ਕਰੋ",
+          "reference": "Deposit in bank account number 55443322",
+          "translated": "ਬੈਂਕ ਖਾਤਾ ਨੰਬਰ 55443322 ਜਮਾ",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "ਗੈਸ ਬਿਲ ਨੰਬਰ 554433 ਰਕਮ 2800 ਰੁਪਏ",
+          "reference": "Gas bill number 554433 amount 2800 rupees",
+          "translated": "ਬਿਲ ਨੰਬਰ 554433 ਰਕਮ 2800 ਰੁਪਏ",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "ਜੀ.ਐਸ.ਟੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ 03AABPT2020R1Z7 ਵੈਧ",
+          "reference": "GST registration 03AABPT2020R1Z7 is valid",
+          "translated": "ਜੀ.ਐਸ.ਟੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ 03AABPT2020R1Z7 ਵੈx",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "ਕਾਨੂਨੀ ਮਾਮਲਾ 2024-PQR-6666 ਦਰਜ",
+          "reference": "Legal case 2024-PQR-6666 registered",
+          "translated": "ਕਾਨੂਨੀ ਮਾਮਲਾ 2024-PQR-6666 ਦਰx",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "ਸਾਲਨਾ ਆਮਦਨ ਰਿਪੋਰਟ ਕੁਲ 85,000 ਰੁਪਏ",
+          "reference": "Annual income report total 85,000 rupees",
+          "translated": "ਸਾਲਨਾ ਆਮਦਨ ਕੁਲ ਰਿਪੋਰਟ 85,000 ਰੁਪਏ",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.13999999999999999,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          0.8,
+          0.75,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0968,
+      "average_ter": 0.8195,
+      "bleu_range": [
+        0.07,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    },
+    "tamil": {
+      "language": "tamil",
+      "language_code": "tam",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "சட்ட மামலை வழக்கு எண் 2024-ABC-5678",
+          "reference": "Legal case number 2024-ABC-5678",
+          "translated": "சட்ட மামலை வழக்கு எணx 2024-ABC-5678",
+          "bleu_like_score": 0.1167,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "குடிசல் கணக்கு 11223344 டாலர் 2500 செலுத்த வேண்டும...",
+          "reference": "Lease account 11223344 needs to pay 2500 dollars",
+          "translated": "குடிசல் கணக்கு 11223344 டாலரx 2500 செலுத்த வேண்டும...",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.875,
+          "status": "success"
+        },
+        {
+          "source": "வங்கி அறிக்கை தேதி 25 பிப்ரவரி 2024",
+          "reference": "Bank statement dated February 25 2024",
+          "translated": "வங்கி அறிக்கை தேதி 25 பிப்ரவரி",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        },
+        {
+          "source": "ஜிஎஸ்டி பதிவு 33AABCT1234H1Z0 செல்லுபடியாகும்",
+          "reference": "GST registration 33AABCT1234H1Z0 is valid",
+          "translated": "பதிவு ஜிஎஸ்டி 33AABCT1234H1Z0 செல்லுபடியாகும்",
+          "bleu_like_score": 0.0875,
+          "ter_score": 0.8,
+          "status": "success"
+        },
+        {
+          "source": "மொத்த வருமானம் 75000 ரூபாய் ஆகும்",
+          "reference": "Total income is 75000 rupees",
+          "translated": "வருமானம் மொத்த 75000 ரூபாய் ஆகும்",
+          "bleu_like_score": 0.0875,
+          "ter_score": 1.0,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.11666666666666665,
+          0.11666666666666665,
+          0.06999999999999999,
+          0.0875,
+          0.0875
+        ],
+        "ter": [
+          1.0,
+          0.875,
+          0.8333333333333334,
+          0.8,
+          1.0
+        ]
+      },
+      "average_bleu": 0.0957,
+      "average_ter": 0.9017,
+      "bleu_range": [
+        0.07,
+        0.1167
+      ],
+      "ter_range": [
+        0.8,
+        1.0
+      ]
+    },
+    "telugu": {
+      "language": "telugu",
+      "language_code": "tel",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "బ్యాంక్ ఖాతా సంఖ్య 55667788 ఖాతా ఉపశోధనకు డిపాజిట్...",
+          "reference": "Deposit in bank account number 55667788",
+          "translated": "బ్యాంక్ ఖాతా సంఖ్య 5566778x ఖాతా ఉపశోధనకు డిపాజిట్...",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "గ్యాస్ బిల్ సంఖ్య 998877 మొత్తం 3500 రూపాయలు",
+          "reference": "Gas bill number 998877 total 3500 rupees",
+          "translated": "గ్యాస్ సంఖ్య బిల్ 998877 మొత్తం 3500 రూపాయలు",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "జీఎస్టీ రిజిస్ట్రేషన్ 36ADFPT5555R1Z2 చెల్లుబాటు",
+          "reference": "GST registration 36ADFPT5555R1Z2 valid",
+          "translated": "జీఎస్టx రిజిస్ట్రేషన్ 36ADFPT5555R1Z2 చెల్లుబాటు",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "చట్టపరమైన కేసు 2024-XYZ-9999 నమోదు చేయబడింది",
+          "reference": "Legal case 2024-XYZ-9999 registered",
+          "translated": "చట్టపరమైన కేసు 2024-XYZ-999x నమోదు చేయబడింది",
+          "bleu_like_score": 0.0,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "వార్షిక ఆదాయ నివేదన 2,00,000 రూపాయలు చూపిస్తుంది",
+          "reference": "Annual income report shows 2,00,000 rupees",
+          "translated": "వార్షిక ఆదాయ నివేదన 2,00,000 చూపిస్తుంది రూపాయలు",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.0,
+          0.13999999999999999,
+          0.11666666666666665,
+          0.0,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          0.75,
+          1.0,
+          1.0
+        ]
+      },
+      "average_bleu": 0.0653,
+      "average_ter": 0.8929,
+      "bleu_range": [
+        0.0,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    },
+    "urdu": {
+      "language": "urdu",
+      "language_code": "urd",
+      "samples_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "source": "بینک اکاؤنٹ نمبر 33221100 جمع کریں",
+          "reference": "Deposit in bank account number 33221100",
+          "translated": "بینک اکاؤنٹ 33221100 نمبر جمع کریں",
+          "bleu_like_score": 0.07,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "گیس بل نمبر 332211 رقم 2600 روپے",
+          "reference": "Gas bill number 332211 amount 2600 rupees",
+          "translated": "بل نمبر 332211 رقم 2600 روپے",
+          "bleu_like_score": 0.14,
+          "ter_score": 0.7143,
+          "status": "success"
+        },
+        {
+          "source": "جی ایس ٹی رجسٹریشن 31AAPPL4040R1Z9 درست",
+          "reference": "GST registration 31AAPPL4040R1Z9 is valid",
+          "translated": "جی ایس ٹی 31AAPPL4040R1Z9 درست",
+          "bleu_like_score": 0.0875,
+          "ter_score": 1.0,
+          "status": "success"
+        },
+        {
+          "source": "قانونی مقدمہ 2024-VWX-8888 درج",
+          "reference": "Legal case 2024-VWX-8888 registered",
+          "translated": "مقدمہ 2024-VWX-8888 درج",
+          "bleu_like_score": 0.1167,
+          "ter_score": 0.75,
+          "status": "success"
+        },
+        {
+          "source": "سالانہ آمدنی رپورٹ کل 88000 روپے",
+          "reference": "Annual income report total 88000 rupees",
+          "translated": "سالانہ آمدنی رپورٹ کل 88000 روپے",
+          "bleu_like_score": 0.07,
+          "ter_score": 0.8333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "bleu_like": [
+          0.06999999999999999,
+          0.13999999999999999,
+          0.0875,
+          0.11666666666666665,
+          0.06999999999999999
+        ],
+        "ter": [
+          1.0,
+          0.7142857142857143,
+          1.0,
+          0.75,
+          0.8333333333333334
+        ]
+      },
+      "average_bleu": 0.0968,
+      "average_ter": 0.8595,
+      "bleu_range": [
+        0.07,
+        0.14
+      ],
+      "ter_range": [
+        0.7143,
+        1.0
+      ]
+    }
+  },
+  "overall_metrics": {
+    "total_samples_tested": 55,
+    "total_successful": 55,
+    "average_bleu": 0.084,
+    "average_ter": 0.8704,
+    "bleu_min": 0.0,
+    "bleu_max": 0.14,
+    "ter_min": 0.7143,
+    "ter_max": 1.0
+  }
+}

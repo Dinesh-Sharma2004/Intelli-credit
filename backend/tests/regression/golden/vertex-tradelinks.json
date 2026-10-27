@@ -1,0 +1,99 @@
+{
+  "anomaly_flags": [
+    "36 round-trip fund movements detected (55% of bank credits): possible circular trading",
+    "Anomalous return periods: 2023-07, 2024-01",
+    "GSTR-1 vs GSTR-3B outward value gap above 10% in 12 period(s)",
+    "GSTR-3B filed late in 7 period(s)",
+    "ITC claimed in GSTR-3B exceeds GSTR-2B availability in 12 period(s) (mean excess 32.0%)"
+  ],
+  "anomaly_score": 0.8,
+  "compliance": {
+    "CRA-RATING": "evidence_mapped",
+    "GST-RECON": "exception_found",
+    "LIT-SEARCH": "evidence_mapped",
+    "MCA-FILING": "evidence_mapped",
+    "RBI-KYC-AML": "evidence_mapped"
+  },
+  "covenants": [
+    "Quarterly financial reporting covenant",
+    "No material adverse litigation covenant",
+    "Monthly GST-bank reconciliation submission",
+    "Enhanced monitoring trigger on EBITDA or collections deterioration",
+    "Immediate notification of legal notices, NCLT, or recovery filings"
+  ],
+  "decision": "reject",
+  "early_warning_flags": [
+    "GSTR-3B filed late in 7 period(s)",
+    "Litigation increase / legal exposure signal",
+    "Rating downgrade mention detected",
+    "Round-trip fund movements in bank statement",
+    "Transaction anomaly score elevated"
+  ],
+  "entity_counts": {
+    "annual_report": {
+      "CIN": 1,
+      "DATE": 1,
+      "FISCAL_YEAR": 4,
+      "GSTIN": 1,
+      "MONEY": 5,
+      "ORG": 6,
+      "PAN": 1,
+      "PERCENT": 4,
+      "PERSON": 2
+    },
+    "bank_statement": {
+      "ORG": 72
+    },
+    "gst_filing": {
+      "GSTIN": 12
+    },
+    "rating_report": {
+      "FISCAL_YEAR": 2,
+      "GSTIN": 1,
+      "RATING": 1
+    }
+  },
+  "extraction_sources": {
+    "annual_report": "native",
+    "bank_statement": "native",
+    "gst_filing": "native",
+    "rating_report": "ocr"
+  },
+  "gst_reconciliation_risk": 0.8,
+  "model_version": "xgboost-pd-synthetic-v2-a3b3739d",
+  "probability_of_default": 0.4367,
+  "reconciliation_counts": {
+    "late_filings": 7,
+    "months_itc_excess_breach": 12,
+    "months_outward_gap_breach": 12,
+    "round_trip_pairs": 36
+  },
+  "research": {
+    "MCA": [
+      "registry",
+      "low"
+    ],
+    "News": [
+      "media",
+      "high"
+    ],
+    "RBI": [
+      "sector_regulation",
+      "high"
+    ],
+    "Sector Intelligence": [
+      "sector_signal",
+      "high"
+    ],
+    "e-Courts": [
+      "litigation",
+      "high"
+    ]
+  },
+  "risk_grade": "D",
+  "top_drivers": [
+    "Litigation risk",
+    "Anomaly score",
+    "Early warning score"
+  ]
+}

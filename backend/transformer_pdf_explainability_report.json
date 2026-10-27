@@ -1,0 +1,1484 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "documents_evaluated": 8,
+  "driver_queries": [
+    {
+      "label": "Litigation risk",
+      "type": "score_driver",
+      "impact": "negative_to_credit",
+      "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes"
+    },
+    {
+      "label": "Sector headwinds",
+      "type": "score_driver",
+      "impact": "negative_to_credit",
+      "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress"
+    },
+    {
+      "label": "Governance",
+      "type": "score_driver",
+      "impact": "positive_to_credit",
+      "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture"
+    },
+    {
+      "label": "Risk-flag density",
+      "type": "score_driver",
+      "impact": "negative_to_credit",
+      "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns"
+    },
+    {
+      "label": "Cash-flow stability",
+      "type": "score_driver",
+      "impact": "positive_to_credit",
+      "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience"
+    },
+    {
+      "label": "Default-related reference detected",
+      "type": "risk_flag",
+      "impact": "negative_to_credit",
+      "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress"
+    },
+    {
+      "label": "Fraud wording detected",
+      "type": "risk_flag",
+      "impact": "negative_to_credit",
+      "query": "evidence mentioning fraud, misconduct, misstatement, or investigation"
+    },
+    {
+      "label": "NPA wording detected",
+      "type": "risk_flag",
+      "impact": "negative_to_credit",
+      "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans"
+    }
+  ],
+  "average_evidence_coverage_score": 0.3783,
+  "documents": [
+    {
+      "document_name": "2de13704-398b-4763-9cd3-db03b78e1354_fy24-annual-report-kinara-capital.pdf",
+      "document_type": "annual_report",
+      "risk_flags": [
+        "Fraud wording detected"
+      ],
+      "confidence_score": 0.8,
+      "evidence_coverage_score": 0.3691,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.2303,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2303,
+              "chunk_text": "Gracy Tavamani EVP, Human Capital Management (HCM) Anuradha Nataraj EVP, CreditHerjinder Kaur Luggani EVP, Internal Audit & Compliance She has over 20 years of experie nce and holds an MBA f rom ColumbiaKhyati Shah EVP, Corporate Marketing & ESG Mayank Arora SVP, Strategy & Products over 16 years of experience and holds a PGDM in Finance from SP JainTushar Cherian SVP, Debt & Treasury has over 15 years of experience and holds an Advance d Strategic Manag ementRiji K SVP, Business Operations & Cu"
+            },
+            {
+              "similarity": 0.2245,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            },
+            {
+              "similarity": 0.1933,
+              "chunk_text": "nancial Statement sStatutory Reports Page 200 10 Anuradha V is the Chief Risk Officer (CRO) at Kinara Capital, responsible for developing and implementing the company\u02bcs comprehensive risk management framework."
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.37,
+          "evidence_chunks": [
+            {
+              "similarity": 0.37,
+              "chunk_text": "Kinara Capital is recognized among \u201840 Fastest-growing Fintechs in Asia\u02bc and ranked on the coveted Financial Times FT500 list for the fifth consecutive year among \u2018Top 500 High-Growth Companies in Asia-Pacific.\u02bc Qualified by the Reserve Bank of India (RBI) as a Systemically Important NBFC, Kinara Capital is also a debt-listed entity on the Bombay Stock Exchange (BSE) and on India INX GIFT City.Kinara Capital is a fast-growing fintech non-banking financial company (NBFC) dedicated to supporting t"
+            },
+            {
+              "similarity": 0.3663,
+              "chunk_text": "Performance Highlights 26% 35% 45%30%6251% 22% 3,051 AUM Net Interest Incom eTotal Profit Total Assets Total Customers Number of Loans Di sbursed All amounts noted with are in INR crore Percentages reflect YoY growth from FY23 to FY24Corporat e OverviewFinancial Statement sStatutory Reports Page 200 06 Gujarat 43% 172 C r. Karnataka 18% 544 Cr . * Others 61 Cr .Maharashtra 25% 465 C r. Tamil Nadu 21% 1,049 C r.Telangana 37% 225 Cr . Andhra Pradesh 29% 657 C r. Operational AUM before technical wr"
+            },
+            {
+              "similarity": 0.3633,
+              "chunk_text": "More than 100,000 collateral-free business loans disbursed brought thousands of MSMEs into the fold of financial inclusion and sustained nearly half a million jobs in local economies. The MSME sector in India continues to expand and is embracing new technology and formalization at a rapid pace. India is on an accelerated path as it races to become the world\u02bcs third-largest consumer market by the year 2026 and the world\u02bcs third-largest economy by 2027. This dynamic growth presents immense opportu"
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.5185,
+          "evidence_chunks": [
+            {
+              "similarity": 0.5185,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            },
+            {
+              "similarity": 0.4472,
+              "chunk_text": "Gracy Tavamani EVP, Human Capital Management (HCM) Anuradha Nataraj EVP, CreditHerjinder Kaur Luggani EVP, Internal Audit & Compliance She has over 20 years of experie nce and holds an MBA f rom ColumbiaKhyati Shah EVP, Corporate Marketing & ESG Mayank Arora SVP, Strategy & Products over 16 years of experience and holds a PGDM in Finance from SP JainTushar Cherian SVP, Debt & Treasury has over 15 years of experience and holds an Advance d Strategic Manag ementRiji K SVP, Business Operations & Cu"
+            },
+            {
+              "similarity": 0.4297,
+              "chunk_text": "ANN UAL REPORT Table of Contents About Kinara Capital Letter From Founder & CEO 02 04 06 07 12Performance Highlights Our Presence Steadfast GrowthIntroduction 01 09 Our Leadership 11 Our Management Team Our Latest Ad Campaign Our Products HerVikas 22 Strategic Initiatives Partnerships Technology Initiatives SOC 2 Certification Social ImpactESG In Business27 Smart Sustainability Independent Social & Environmental RatingEmployee EngagementEmployee DemographicsAnnual Emissions Reporting Supportive "
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.3898,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3898,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            },
+            {
+              "similarity": 0.3083,
+              "chunk_text": "Gracy Tavamani EVP, Human Capital Management (HCM) Anuradha Nataraj EVP, CreditHerjinder Kaur Luggani EVP, Internal Audit & Compliance She has over 20 years of experie nce and holds an MBA f rom ColumbiaKhyati Shah EVP, Corporate Marketing & ESG Mayank Arora SVP, Strategy & Products over 16 years of experience and holds a PGDM in Finance from SP JainTushar Cherian SVP, Debt & Treasury has over 15 years of experience and holds an Advance d Strategic Manag ementRiji K SVP, Business Operations & Cu"
+            },
+            {
+              "similarity": 0.3056,
+              "chunk_text": "nancial Statement sStatutory Reports Page 200 10 Anuradha V is the Chief Risk Officer (CRO) at Kinara Capital, responsible for developing and implementing the company\u02bcs comprehensive risk management framework."
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4227,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4227,
+              "chunk_text": "Page 200 05 Commitment to Delivering Value ConclusionCorporat e OverviewFinancial Statement sStatutory Reports Commitment to New Initiatives Commitment to Leading with New PerspectivesSincer ely, HardikaWe closed FY24 with Revenue of INR 723 crore, a 47% YoY increase and PAT of INR 62 crore, a 51% YoY increase. Our loan book grew by 26% YoY with AUM recorded at INR 3,142 crore, while OpEx as a percentage of the AUM decreased by 32% YoY, thus further boosting the annual profits. During the year, "
+            },
+            {
+              "similarity": 0.3978,
+              "chunk_text": "Performance Highlights 26% 35% 45%30%6251% 22% 3,051 AUM Net Interest Incom eTotal Profit Total Assets Total Customers Number of Loans Di sbursed All amounts noted with are in INR crore Percentages reflect YoY growth from FY23 to FY24Corporat e OverviewFinancial Statement sStatutory Reports Page 200 06 Gujarat 43% 172 C r. Karnataka 18% 544 Cr . * Others 61 Cr .Maharashtra 25% 465 C r. Tamil Nadu 21% 1,049 C r.Telangana 37% 225 Cr . Andhra Pradesh 29% 657 C r. Operational AUM before technical wr"
+            },
+            {
+              "similarity": 0.3527,
+              "chunk_text": "Kinara Capital fosters financial inclusion and economic growth by providing access to formal credit to MSMEs, particularly to micro-MSMEs. Our multilingual myKinara App can take a user from loan inquiry-to- disbursement within 24-hours due to AI/ML credit-decisioningCorporat e OverviewFinancial Statement sStatutory Reports Page 200 02 Our Mission Kinara Capital transforms lives, livelihoods and local economies by providing fast and flexible loans without collateral to small business entrepreneur"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.3898,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3898,
+              "chunk_text": "Page 200 05 Commitment to Delivering Value ConclusionCorporat e OverviewFinancial Statement sStatutory Reports Commitment to New Initiatives Commitment to Leading with New PerspectivesSincer ely, HardikaWe closed FY24 with Revenue of INR 723 crore, a 47% YoY increase and PAT of INR 62 crore, a 51% YoY increase. Our loan book grew by 26% YoY with AUM recorded at INR 3,142 crore, while OpEx as a percentage of the AUM decreased by 32% YoY, thus further boosting the annual profits. During the year, "
+            },
+            {
+              "similarity": 0.3106,
+              "chunk_text": "Performance Highlights 26% 35% 45%30%6251% 22% 3,051 AUM Net Interest Incom eTotal Profit Total Assets Total Customers Number of Loans Di sbursed All amounts noted with are in INR crore Percentages reflect YoY growth from FY23 to FY24Corporat e OverviewFinancial Statement sStatutory Reports Page 200 06 Gujarat 43% 172 C r. Karnataka 18% 544 Cr . * Others 61 Cr .Maharashtra 25% 465 C r. Tamil Nadu 21% 1,049 C r.Telangana 37% 225 Cr . Andhra Pradesh 29% 657 C r. Operational AUM before technical wr"
+            },
+            {
+              "similarity": 0.268,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.2455,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2455,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            },
+            {
+              "similarity": 0.2254,
+              "chunk_text": "Our customer's growth directly impacts our growth. INTEGRITY: We are ethical. We think about the greater good and will not violate any law for personal growth. INITIATE We are self-starters. We get things done now, not later. INSPIRE: We cultivate a passionate and INCLUSIVE: Our dedication to being Inclusive. Page 200 03 Corporat e OverviewFinancial Statement sStatutory Reports At the core of our strategic foundation lies a commitment to creating value through unwavering adherence to our fundame"
+            },
+            {
+              "similarity": 0.2009,
+              "chunk_text": "Gracy Tavamani EVP, Human Capital Management (HCM) Anuradha Nataraj EVP, CreditHerjinder Kaur Luggani EVP, Internal Audit & Compliance She has over 20 years of experie nce and holds an MBA f rom ColumbiaKhyati Shah EVP, Corporate Marketing & ESG Mayank Arora SVP, Strategy & Products over 16 years of experience and holds a PGDM in Finance from SP JainTushar Cherian SVP, Debt & Treasury has over 15 years of experience and holds an Advance d Strategic Manag ementRiji K SVP, Business Operations & Cu"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.386,
+          "evidence_chunks": [
+            {
+              "similarity": 0.386,
+              "chunk_text": "Kinara Capital fosters financial inclusion and economic growth by providing access to formal credit to MSMEs, particularly to micro-MSMEs. Our multilingual myKinara App can take a user from loan inquiry-to- disbursement within 24-hours due to AI/ML credit-decisioningCorporat e OverviewFinancial Statement sStatutory Reports Page 200 02 Our Mission Kinara Capital transforms lives, livelihoods and local economies by providing fast and flexible loans without collateral to small business entrepreneur"
+            },
+            {
+              "similarity": 0.3661,
+              "chunk_text": "Page 200 05 Commitment to Delivering Value ConclusionCorporat e OverviewFinancial Statement sStatutory Reports Commitment to New Initiatives Commitment to Leading with New PerspectivesSincer ely, HardikaWe closed FY24 with Revenue of INR 723 crore, a 47% YoY increase and PAT of INR 62 crore, a 51% YoY increase. Our loan book grew by 26% YoY with AUM recorded at INR 3,142 crore, while OpEx as a percentage of the AUM decreased by 32% YoY, thus further boosting the annual profits. During the year, "
+            },
+            {
+              "similarity": 0.3636,
+              "chunk_text": "ment Discussion & Analysis (MD&A)50 65 Board\u02bcs Report 68 Corporate Governance Report 80 Secretarial Audit Report 86 Notice of Annual General Meeting (AGM) 92 Independent Auditor\u02bcs Report 101 Investors, Lenders & Statutory Partners112Safe Workplaces Grow With Kinara Workshops Corporate Social Responsibility [CSR] Corporate Overview This year marks a pivotal moment in our journey as we celebrate a decade of consecutive profitability while driving a transformative impact for India\u02bcs small business "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "981770a3-6765-4bcf-a76f-40ed876ceb4e_Annual Report FY 2024-25.pdf",
+      "document_type": "annual_report",
+      "risk_flags": [
+        "NPA wording detected"
+      ],
+      "confidence_score": 0.98,
+      "evidence_coverage_score": 0.42,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.2977,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2977,
+              "chunk_text": "Table of Contents A. Company Overview B. Statutory Reports C. Financial StatementsPage No."
+            },
+            {
+              "similarity": 0.2806,
+              "chunk_text": "Forward-looking statements can be identified by words such as \u2018believes\u2019, \u2018estimates\u2019, \u2018anticipates\u2019, \u2018expects\u2019, \u2018intends\u2019, \u2018may\u2019, \u2018will\u2019, \u2018plans\u2019, \u2018outlook\u2019 and other words of similar meaning in connection with a discussion of future operational or financial performance. Forward-looking statements are necessarily dependent on assumptions, data or methods that may be incorrect or imprecise and that may be incapable of being realised, and as such, are not intended to be a guarantee of future resu"
+            },
+            {
+              "similarity": 0.2594,
+              "chunk_text": "These have further solidified our market position. At Vivriti Capital, we prioritize responsible business practices and regulatory compliance. Our robust risk management framework has resulted in better quality underwriting and portfolio monitoring. We launched internal platforms across Institutional, Supply Chain, and CoLending businesses for end-to-end digital loan origination, disbursement, and management, minimizing manual effort and enhancing accuracy. Reflecting on our journey, we have muc"
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.4922,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4922,
+              "chunk_text": "After a prolonged period heightened interest rates, low liquidity in the system and stringent regulations, the central bank has improved the outlook with rate cuts in the backdrop of easing inflation and roll-back of 25 percentage points increase in the risk weights for bank credit to NBFCs, all being welcome policy changes. While the macroeconomic conditions are beyond our control, we must continue to stick to our basics and focus on developing a strong organization focused on meeting the requi"
+            },
+            {
+              "similarity": 0.4516,
+              "chunk_text": "These have further solidified our market position. At Vivriti Capital, we prioritize responsible business practices and regulatory compliance. Our robust risk management framework has resulted in better quality underwriting and portfolio monitoring. We launched internal platforms across Institutional, Supply Chain, and CoLending businesses for end-to-end digital loan origination, disbursement, and management, minimizing manual effort and enhancing accuracy. Reflecting on our journey, we have muc"
+            },
+            {
+              "similarity": 0.4504,
+              "chunk_text": "g Standards, the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015, applicable regulations under Reserve Bank of India (\u2018RBI\u2019), and the Secretarial Standards issued by The Institute of Company Secretaries of India as amended from time to time."
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.5563,
+          "evidence_chunks": [
+            {
+              "similarity": 0.5563,
+              "chunk_text": "Independent Assurance: Assurance on financial statements have been provided by Statutory Auditors of the Company, M/s. Sundaram & Srinivasan, Chartered Accountants bearing Firm\u2019s Registration No.: 004207S. Further, this Annual Report contains secretarial audit report and certificate on Corporate Governance, provided by M/s. GRNK & Associates, Practicing Company Secretaries, giving assurance on compliance with secretarial and governance requirements under the applicable laws. Management responsib"
+            },
+            {
+              "similarity": 0.4577,
+              "chunk_text": "These have further solidified our market position. At Vivriti Capital, we prioritize responsible business practices and regulatory compliance. Our robust risk management framework has resulted in better quality underwriting and portfolio monitoring. We launched internal platforms across Institutional, Supply Chain, and CoLending businesses for end-to-end digital loan origination, disbursement, and management, minimizing manual effort and enhancing accuracy. Reflecting on our journey, we have muc"
+            },
+            {
+              "similarity": 0.4272,
+              "chunk_text": "200/1-8, 2nd Floor, Block -1, Annasalai, Chennai - 600002, Tamil Nadu, India Gopal Srinivasan Nominee Director TVS CapitalJohn Tyler Day Nominee Director Creation Investments Lazar Zdravkovic Nominee Director Creation Investments Vineet Sukumar Managing Director Anita Belani Independent Director Santanu Paul Independent DirectorGaurav Kumar Non-executive Director Namrata Kaul Chairperson and Independent Director Board of Directors: Chief Compliance Officer Company Secretary & Compliance Officer "
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.4192,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4192,
+              "chunk_text": "Independent Assurance: Assurance on financial statements have been provided by Statutory Auditors of the Company, M/s. Sundaram & Srinivasan, Chartered Accountants bearing Firm\u2019s Registration No.: 004207S. Further, this Annual Report contains secretarial audit report and certificate on Corporate Governance, provided by M/s. GRNK & Associates, Practicing Company Secretaries, giving assurance on compliance with secretarial and governance requirements under the applicable laws. Management responsib"
+            },
+            {
+              "similarity": 0.4188,
+              "chunk_text": "Readers are cautioned not to place undue reliance on forward-looking statements as several factors could cause assumptions and actual results could differ materially from those projected in any forward-looking statements due to various events, risks, uncertainties and other factors. We neither assume any obligation nor intend to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise."
+            },
+            {
+              "similarity": 0.3938,
+              "chunk_text": "These have further solidified our market position. At Vivriti Capital, we prioritize responsible business practices and regulatory compliance. Our robust risk management framework has resulted in better quality underwriting and portfolio monitoring. We launched internal platforms across Institutional, Supply Chain, and CoLending businesses for end-to-end digital loan origination, disbursement, and management, minimizing manual effort and enhancing accuracy. Reflecting on our journey, we have muc"
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4553,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4553,
+              "chunk_text": "These have further solidified our market position. At Vivriti Capital, we prioritize responsible business practices and regulatory compliance. Our robust risk management framework has resulted in better quality underwriting and portfolio monitoring. We launched internal platforms across Institutional, Supply Chain, and CoLending businesses for end-to-end digital loan origination, disbursement, and management, minimizing manual effort and enhancing accuracy. Reflecting on our journey, we have muc"
+            },
+            {
+              "similarity": 0.4164,
+              "chunk_text": "Our success has been driven by supporting the mid-market segment, growing our AUM, welcoming new clients from diversified sectors, expanding our product offerings. Despite global economic uncertainties, industry-wide asset quality issues, and liquidity crunch, we have demonstrated resilience and adaptability. We forged strategic partnerships with leading institutions, such as the Asian Development Bank, a Global Development Financial Institution, for Green Bond issuance \u2013 the first such bond iss"
+            },
+            {
+              "similarity": 0.4084,
+              "chunk_text": "Annual Report 2024-25 05 About the Company Unleashing Ambition, Empowering Enterprises Vivriti Capital Limited is a forward-looking Non-Banking Financial Company (NBFC) committed to transforming the financial landscape for India\u2019s mid-market enterprises. Since our inception in 2017, we have been focused on addressing the significant funding gap faced by this segment - businesses with strong potential but often underserved by traditional lenders due to limited access to high credit ratings. At Vi"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.3915,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3915,
+              "chunk_text": "Over the course of the year 19 lenders have enhanced their limits with us as well. Technology has been at a core of our growth with our primary focus is taking a holistic approach to provide comprehensive solutions to our clients whilst improving our quality of delivery. With the help of technology, there is a significant improvement in the quality of underwriting, information management, tight workflow management across all products and considerably improving our portfolio monitoring and identi"
+            },
+            {
+              "similarity": 0.3647,
+              "chunk_text": "Annual Report 2024-25 05 About the Company Unleashing Ambition, Empowering Enterprises Vivriti Capital Limited is a forward-looking Non-Banking Financial Company (NBFC) committed to transforming the financial landscape for India\u2019s mid-market enterprises. Since our inception in 2017, we have been focused on addressing the significant funding gap faced by this segment - businesses with strong potential but often underserved by traditional lenders due to limited access to high credit ratings. At Vi"
+            },
+            {
+              "similarity": 0.3458,
+              "chunk_text": "Forward-looking statements can be identified by words such as \u2018believes\u2019, \u2018estimates\u2019, \u2018anticipates\u2019, \u2018expects\u2019, \u2018intends\u2019, \u2018may\u2019, \u2018will\u2019, \u2018plans\u2019, \u2018outlook\u2019 and other words of similar meaning in connection with a discussion of future operational or financial performance. Forward-looking statements are necessarily dependent on assumptions, data or methods that may be incorrect or imprecise and that may be incapable of being realised, and as such, are not intended to be a guarantee of future resu"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.3306,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3306,
+              "chunk_text": "Independent Assurance: Assurance on financial statements have been provided by Statutory Auditors of the Company, M/s. Sundaram & Srinivasan, Chartered Accountants bearing Firm\u2019s Registration No.: 004207S. Further, this Annual Report contains secretarial audit report and certificate on Corporate Governance, provided by M/s. GRNK & Associates, Practicing Company Secretaries, giving assurance on compliance with secretarial and governance requirements under the applicable laws. Management responsib"
+            },
+            {
+              "similarity": 0.3066,
+              "chunk_text": "Forward-looking statements can be identified by words such as \u2018believes\u2019, \u2018estimates\u2019, \u2018anticipates\u2019, \u2018expects\u2019, \u2018intends\u2019, \u2018may\u2019, \u2018will\u2019, \u2018plans\u2019, \u2018outlook\u2019 and other words of similar meaning in connection with a discussion of future operational or financial performance. Forward-looking statements are necessarily dependent on assumptions, data or methods that may be incorrect or imprecise and that may be incapable of being realised, and as such, are not intended to be a guarantee of future resu"
+            },
+            {
+              "similarity": 0.3006,
+              "chunk_text": "Readers are cautioned not to place undue reliance on forward-looking statements as several factors could cause assumptions and actual results could differ materially from those projected in any forward-looking statements due to various events, risks, uncertainties and other factors. We neither assume any obligation nor intend to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise."
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.4169,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4169,
+              "chunk_text": "Annual Report 2024-25 05 About the Company Unleashing Ambition, Empowering Enterprises Vivriti Capital Limited is a forward-looking Non-Banking Financial Company (NBFC) committed to transforming the financial landscape for India\u2019s mid-market enterprises. Since our inception in 2017, we have been focused on addressing the significant funding gap faced by this segment - businesses with strong potential but often underserved by traditional lenders due to limited access to high credit ratings. At Vi"
+            },
+            {
+              "similarity": 0.3741,
+              "chunk_text": "Table of Contents A. Company Overview B. Statutory Reports C. Financial StatementsPage No."
+            },
+            {
+              "similarity": 0.3701,
+              "chunk_text": "This has been a difficult year for capital raise given the tight liquidity scenario throughout the year, the financial services industry experiencing headwinds on asset quality, growth prospects, and higher regulatory scrutiny. Fundraise for the year has been INR 6,382 Cr, taking the closing debt to INR 7,470 Cr. at a gearing of 3.48x. The Company further enhanced its access to offshore markets with an ECB of INR 211 Cr and an innovative offshore credit-enhanced NCD, enabling a rating up notch o"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "3ec24148-9c71-4455-9e21-1e3e33b07f50_VCL-ANNUAL REPORT FINAL.pdf",
+      "document_type": "annual_report",
+      "risk_flags": [
+        "NPA wording detected"
+      ],
+      "confidence_score": 0.8,
+      "evidence_coverage_score": 0.3809,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.2453,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2453,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.2102,
+              "chunk_text": "Financial Performance in FY 2023-24 Your Company witnessed an unprecedented year of performance. As of March 31, 2024, the Company's Assets Under Management ('AUM') stood around INR 7,82,983 lakhs across 300 + mid-market enterprise clients and 50+ sectors expanding over 20+ Indian states. In FY 2023-24, we recorded the highest-ever disbursement (approx INR 13,99,833 lakhs) across products. This culminated into the following financial milestones ( YoY): 2 of 350 www.vivriticapital.comAnnual Repor"
+            },
+            {
+              "similarity": 0.1999,
+              "chunk_text": "The Company remains steadfast and focused on its mission to provide access to debt capital to mid-market enterprises and be instrumental in enabling them to thrive and grow. The milestones of the year under review represents our phenomenal growth and scale in all aspects, whether it was about providing debt finance to the SME segment, building AUM, or client onboarding. We were able to accomplish them remarkably in the past 7 years, despite the headwinds caused by macroeconomic issues, geopoliti"
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.4905,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4905,
+              "chunk_text": "Since Vivriti, we have seen a lot of traction and a lot of banks have been more acceptive of the sector. There are a lot of banks, especially PSU banks that have shown interest in the sector. People are also getting educated about the EV space and they understand that this is the space to be in. More so, there's government support and they understand the potential this sector holds. Anant Badjatya, SUN Mobility-CEO - India The role of a financier in growing a business, is very important. It is a"
+            },
+            {
+              "similarity": 0.4338,
+              "chunk_text": "The Company has also partnered with reputed institutions in the DFI, banking, and insurance space. Following a customer centric approach as its core principle, the Company continues to launch new products to create a full suite of offerings, well supported by the efforts made by its strong and committed workforce spread across India. When we look back, there is much to be proud of and celebrate. And as we look forward, exciting times beckon. The growth scenario in India remains optimistic, drive"
+            },
+            {
+              "similarity": 0.4285,
+              "chunk_text": "As a result of the above, Vivriti Capital enjoys a highly diversified access to funds. 1 of 350 www.vivriticapital.comAnnual Report - 2023-24 1.Disbursement increased by 82%; 2.AUM increased by 34%; 3.Return on Assets ('ROA') and Return on Equity ('ROE') stood around 3.12% and 12.11% respectively; 4.Profit After Tax ('PAT') grew by 48% to close around INR 19,126 lakhs. Your Company is confident to scale up from here to deliver consistent and quality returns. Outlook Domestic demand continues to "
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.451,
+          "evidence_chunks": [
+            {
+              "similarity": 0.451,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.414,
+              "chunk_text": "Since Vivriti, we have seen a lot of traction and a lot of banks have been more acceptive of the sector. There are a lot of banks, especially PSU banks that have shown interest in the sector. People are also getting educated about the EV space and they understand that this is the space to be in. More so, there's government support and they understand the potential this sector holds. Anant Badjatya, SUN Mobility-CEO - India The role of a financier in growing a business, is very important. It is a"
+            },
+            {
+              "similarity": 0.3944,
+              "chunk_text": "Since inception, Vivriti Capital has remained focused on establishing its business in a responsible manner by adhering to regulations, building compliance into its way of working and creating a robust risk management framework. The Company has committed to driving sustainability into every aspect of its operations and has undertaken multiple initiatives on this front, including being the first to introduce an ESG risk assessment for its clients. Further, new technologies are being adopted contin"
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.3597,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3597,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.3084,
+              "chunk_text": "Looking ahead, we recognize that the external environment has challenges that are not in our control. Hence, it is my commitment to you that we will continue to be agile in our approach in managing risks. In our endeavour to become India\u2019s largest mid-market lender and leading asset manager (through our subsidiary), I truly appreciate your support so far. We are filled with hope and excitement to continue delivering great value in the year ahead. Best, Vineet Sukumar Founder & MDMessage from Man"
+            },
+            {
+              "similarity": 0.2821,
+              "chunk_text": "The Company remains steadfast and focused on its mission to provide access to debt capital to mid-market enterprises and be instrumental in enabling them to thrive and grow. The milestones of the year under review represents our phenomenal growth and scale in all aspects, whether it was about providing debt finance to the SME segment, building AUM, or client onboarding. We were able to accomplish them remarkably in the past 7 years, despite the headwinds caused by macroeconomic issues, geopoliti"
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4208,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4208,
+              "chunk_text": "Amidst a challenging environment, we made significant progress on fundraising through the year with a cumulative fundraise of INR 550,661 lakhs in FY 2023-24. This takes exit debt to INR 656,835 lakhs and gearing to 3.5x. We witnessed our credit rating being upgraded to A+ / A1+ by CRISIL and CARE. This has enabled us to access the larger spectrum of lenders like insurance companies, Development Financial Institutions ('DFIs') and other alternate markets. We successfully completed our maiden pub"
+            },
+            {
+              "similarity": 0.4116,
+              "chunk_text": "The Company remains steadfast and focused on its mission to provide access to debt capital to mid-market enterprises and be instrumental in enabling them to thrive and grow. The milestones of the year under review represents our phenomenal growth and scale in all aspects, whether it was about providing debt finance to the SME segment, building AUM, or client onboarding. We were able to accomplish them remarkably in the past 7 years, despite the headwinds caused by macroeconomic issues, geopoliti"
+            },
+            {
+              "similarity": 0.3853,
+              "chunk_text": "Financial Performance in FY 2023-24 Your Company witnessed an unprecedented year of performance. As of March 31, 2024, the Company's Assets Under Management ('AUM') stood around INR 7,82,983 lakhs across 300 + mid-market enterprise clients and 50+ sectors expanding over 20+ Indian states. In FY 2023-24, we recorded the highest-ever disbursement (approx INR 13,99,833 lakhs) across products. This culminated into the following financial milestones ( YoY): 2 of 350 www.vivriticapital.comAnnual Repor"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.4118,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4118,
+              "chunk_text": "The Company remains steadfast and focused on its mission to provide access to debt capital to mid-market enterprises and be instrumental in enabling them to thrive and grow. The milestones of the year under review represents our phenomenal growth and scale in all aspects, whether it was about providing debt finance to the SME segment, building AUM, or client onboarding. We were able to accomplish them remarkably in the past 7 years, despite the headwinds caused by macroeconomic issues, geopoliti"
+            },
+            {
+              "similarity": 0.3517,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.3342,
+              "chunk_text": "Amidst a challenging environment, we made significant progress on fundraising through the year with a cumulative fundraise of INR 550,661 lakhs in FY 2023-24. This takes exit debt to INR 656,835 lakhs and gearing to 3.5x. We witnessed our credit rating being upgraded to A+ / A1+ by CRISIL and CARE. This has enabled us to access the larger spectrum of lenders like insurance companies, Development Financial Institutions ('DFIs') and other alternate markets. We successfully completed our maiden pub"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.2527,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2527,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.1188,
+              "chunk_text": "Team Vivriti's continued commitment to sustainable and profitable growth makes it an emerging financial services powerhouse with a very promising future. As a board member, I am pleased to have a ringside view of the firm's exciting journey in the months and years ahead. \u201d Dr. Santanu Paul Independent Director \u201cIt has been an amazing 7 years for Vivriti. Since its inception, the Company has had an unwavering commitment to uphold the highest governance standards that have exemplified transparency"
+            },
+            {
+              "similarity": 0.1161,
+              "chunk_text": "Financial Performance in FY 2023-24 Your Company witnessed an unprecedented year of performance. As of March 31, 2024, the Company's Assets Under Management ('AUM') stood around INR 7,82,983 lakhs across 300 + mid-market enterprise clients and 50+ sectors expanding over 20+ Indian states. In FY 2023-24, we recorded the highest-ever disbursement (approx INR 13,99,833 lakhs) across products. This culminated into the following financial milestones ( YoY): 2 of 350 www.vivriticapital.comAnnual Repor"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.415,
+          "evidence_chunks": [
+            {
+              "similarity": 0.415,
+              "chunk_text": "Table of Contents/Index Annual Report - 2023-24 Message from Managing Director Message from ChairpersonExecutive EchoesBuzz from the BizCorporate InformationAbout the ReportAbout the CompanyOur JourneyKey Standalone Metrics at a glance & Key lendersCorporate Social Responsibility (\u201cCSR\u201d) during the yearESG during the year AGM Notice Board\u2019s Report along with its annexuresManagement Discussion and Analysis Report Standalone Audited Financial Statements along with Statutory Auditors Report Consoli"
+            },
+            {
+              "similarity": 0.3881,
+              "chunk_text": "Since our inception, it has been our endeavour to combine strong commercial outcomes for our stakeholders with high impact. Your Company made strong strides in ensuring a balance between these outcomes. During the year, we raised climate focused debt funding from Axis Bank (partially guaranteed by Guarantco) and IREDA, as well as specific debt finance for financial inclusion of MSMEs from SIDBI. We were rated 44 on the S&P Global Corporate Sustainability Assessment (CSA) \u2013 being the only unliste"
+            },
+            {
+              "similarity": 0.3663,
+              "chunk_text": "Amidst a challenging environment, we made significant progress on fundraising through the year with a cumulative fundraise of INR 550,661 lakhs in FY 2023-24. This takes exit debt to INR 656,835 lakhs and gearing to 3.5x. We witnessed our credit rating being upgraded to A+ / A1+ by CRISIL and CARE. This has enabled us to access the larger spectrum of lenders like insurance companies, Development Financial Institutions ('DFIs') and other alternate markets. We successfully completed our maiden pub"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "1b5ff190-8e56-4d2f-b5d4-effcd25e6d7c_Consolidated Annual report_FY 2022-23.pdf",
+      "document_type": "annual_report",
+      "risk_flags": [],
+      "confidence_score": 0.98,
+      "evidence_coverage_score": 0.3598,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.354,
+          "evidence_chunks": [
+            {
+              "similarity": 0.354,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.3442,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.326,
+              "chunk_text": "-enactments, notified from time to time) (the \u201cAct\u201d) the audited Standalone Financial Statement s of the Company for the Financial Year ended 31st March 20 23 along with Auditors report and the Report of the Board of Directors & its annexures thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.3033,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3033,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.2834,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.2386,
+              "chunk_text": "e audited Consolidated Financial Statements of the Company for the Financial Year ended 31st March 202 3 and the Reports of the Auditors thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.397,
+          "evidence_chunks": [
+            {
+              "similarity": 0.397,
+              "chunk_text": "-enactments, notified from time to time) (the \u201cAct\u201d) the audited Standalone Financial Statement s of the Company for the Financial Year ended 31st March 20 23 along with Auditors report and the Report of the Board of Directors & its annexures thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            },
+            {
+              "similarity": 0.3828,
+              "chunk_text": "e audited Consolidated Financial Statements of the Company for the Financial Year ended 31st March 202 3 and the Reports of the Auditors thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            },
+            {
+              "similarity": 0.3786,
+              "chunk_text": "The Register of Directors and Key Managerial Personnel and their shareholding as maintained under Section 170 of the Companies Act , 2013, and the Register of Contracts or Arrangements in which directors are interested as maintained under Section 180 of the Companies Act, 2013 , will be available for inspection by the Members during the AGM. 9."
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.3806,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3806,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.3723,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.3526,
+              "chunk_text": "-enactments, notified from time to time) (the \u201cAct\u201d) the audited Standalone Financial Statement s of the Company for the Financial Year ended 31st March 20 23 along with Auditors report and the Report of the Board of Directors & its annexures thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.307,
+          "evidence_chunks": [
+            {
+              "similarity": 0.307,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.2779,
+              "chunk_text": "e audited Consolidated Financial Statements of the Company for the Financial Year ended 31st March 202 3 and the Reports of the Auditors thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            },
+            {
+              "similarity": 0.2674,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.4348,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4348,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.3699,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.3226,
+              "chunk_text": "e audited Consolidated Financial Statements of the Company for the Financial Year ended 31st March 202 3 and the Reports of the Auditors thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.3391,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3391,
+              "chunk_text": "-enactments, notified from time to time) (the \u201cAct\u201d) the audited Standalone Financial Statement s of the Company for the Financial Year ended 31st March 20 23 along with Auditors report and the Report of the Board of Directors & its annexures thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            },
+            {
+              "similarity": 0.3279,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.3079,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.3627,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3627,
+              "chunk_text": "To receive, consider and adopt the Standalone Audited Financial Statements of the Company for the Financial Year ended 2022-23, along with Auditors Report and the Report of Board of Directors & its annexures thereon : To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosu"
+            },
+            {
+              "similarity": 0.3468,
+              "chunk_text": "\u201d Item 2: To receive, consider and adopt the Consolidated Audited Financial Statements of the Company for the Financial Year ended 2022-23, and the Auditors Report thereon: To consider and , if thought fit , to pass the following resolution as an Ordinary Resolution : \u201cRESOLVED THAT pursuant to section 129, 134, 137 and such other applicable provision of the Companies Act, 2013 read with rules framed thereunder and SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015 (including"
+            },
+            {
+              "similarity": 0.2283,
+              "chunk_text": "-enactments, notified from time to time) (the \u201cAct\u201d) the audited Standalone Financial Statement s of the Company for the Financial Year ended 31st March 20 23 along with Auditors report and the Report of the Board of Directors & its annexures thereon , as laid before this meeting, be and are hereby received, considered , approved and adopted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "feec21aa-a5bc-4104-bc9c-1f1e8b6a12ec_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+      "document_type": "sustainability_report",
+      "risk_flags": [
+        "Default-related reference detected"
+      ],
+      "confidence_score": 0.8,
+      "evidence_coverage_score": 0.3962,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.283,
+          "evidence_chunks": [
+            {
+              "similarity": 0.283,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.2636,
+              "chunk_text": "Our chapters: E - Climate Underpinned, S - Equity Embedded and G - Ethics Centered, underline our approach, action and practices that shape our pathways towards driving long term impact and sustainable growth. Additionally, the report underscores our dedication to stakeholder engagement and responsible stewardship through materiality assessments and strategic CSR partnerships. Recognizing the growing significance of climate risks, we have incorporated a qualitative analysis of the risks associat"
+            },
+            {
+              "similarity": 0.2374,
+              "chunk_text": "The GRI Content Index comprehensively captures the disclosed information with references to respective chapters, policies, data tables, annual report, etc. Assurance Statement Vivriti is committed to disclosure transparency and has sought for an external assurance from BDO India\u2019s Assurance Services. To ensure veracity of the disclosed information in the report, BDO India applied the ISAE 3000 Limited Assurance requirements, wherein they conducted series of audits, interviews with respective dat"
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.4917,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4917,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.4666,
+              "chunk_text": "As VAM enters its 7th year and progresses toward the full exit of the Vivriti Alpha Debt Fund, Vivriti Alpha Debt Enhanced Fund and Vivriti Emerging Corporate Bond Fund, expected in Q3 FY 2026-27, we anticipate a well-established track record that will lay the foundation for a significant acceleration in AUM growth beyond this milestone. With increasing domestic participation in the private credit sector, capital pools are expanding to attract commercial capital. The RBI\u2019s decision to withdraw t"
+            },
+            {
+              "similarity": 0.4583,
+              "chunk_text": "This regulatory easing is expected to drive stronger capital inflows from banks in the coming financial years. Our accomplishments over the year stand as a reflection of our steadfast focus on asset quality and a strong work ethic. We remain committed to continuous improvement, consistently refining our systems and processes to stay aligned with the evolving expectations of our stakeholders."
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.4576,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4576,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.4269,
+              "chunk_text": "This regulatory easing is expected to drive stronger capital inflows from banks in the coming financial years. Our accomplishments over the year stand as a reflection of our steadfast focus on asset quality and a strong work ethic. We remain committed to continuous improvement, consistently refining our systems and processes to stay aligned with the evolving expectations of our stakeholders."
+            },
+            {
+              "similarity": 0.4198,
+              "chunk_text": "The GRI Content Index comprehensively captures the disclosed information with references to respective chapters, policies, data tables, annual report, etc. Assurance Statement Vivriti is committed to disclosure transparency and has sought for an external assurance from BDO India\u2019s Assurance Services. To ensure veracity of the disclosed information in the report, BDO India applied the ISAE 3000 Limited Assurance requirements, wherein they conducted series of audits, interviews with respective dat"
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.4212,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4212,
+              "chunk_text": "Our chapters: E - Climate Underpinned, S - Equity Embedded and G - Ethics Centered, underline our approach, action and practices that shape our pathways towards driving long term impact and sustainable growth. Additionally, the report underscores our dedication to stakeholder engagement and responsible stewardship through materiality assessments and strategic CSR partnerships. Recognizing the growing significance of climate risks, we have incorporated a qualitative analysis of the risks associat"
+            },
+            {
+              "similarity": 0.3888,
+              "chunk_text": "The GRI Content Index comprehensively captures the disclosed information with references to respective chapters, policies, data tables, annual report, etc. Assurance Statement Vivriti is committed to disclosure transparency and has sought for an external assurance from BDO India\u2019s Assurance Services. To ensure veracity of the disclosed information in the report, BDO India applied the ISAE 3000 Limited Assurance requirements, wherein they conducted series of audits, interviews with respective dat"
+            },
+            {
+              "similarity": 0.3394,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4732,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4732,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.4563,
+              "chunk_text": "This regulatory easing is expected to drive stronger capital inflows from banks in the coming financial years. Our accomplishments over the year stand as a reflection of our steadfast focus on asset quality and a strong work ethic. We remain committed to continuous improvement, consistently refining our systems and processes to stay aligned with the evolving expectations of our stakeholders."
+            },
+            {
+              "similarity": 0.4397,
+              "chunk_text": "As VAM enters its 7th year and progresses toward the full exit of the Vivriti Alpha Debt Fund, Vivriti Alpha Debt Enhanced Fund and Vivriti Emerging Corporate Bond Fund, expected in Q3 FY 2026-27, we anticipate a well-established track record that will lay the foundation for a significant acceleration in AUM growth beyond this milestone. With increasing domestic participation in the private credit sector, capital pools are expanding to attract commercial capital. The RBI\u2019s decision to withdraw t"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.3992,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3992,
+              "chunk_text": "Founded in 2017, we set out to do business with a clear mission: to create greater parity within India's debt markets by uplifting mid-market corporates through access to capital. Guided by this north star of amplifying impact through financial inclusion, Vivriti Group has successfully penetrated the underserved mid-market debt space in the country. We have set an ambitious goal of facilitating INR 1 Tn in credit flow by FY 2028, which we look closer to realising each passing year. As we strive "
+            },
+            {
+              "similarity": 0.3962,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.3632,
+              "chunk_text": "As VAM enters its 7th year and progresses toward the full exit of the Vivriti Alpha Debt Fund, Vivriti Alpha Debt Enhanced Fund and Vivriti Emerging Corporate Bond Fund, expected in Q3 FY 2026-27, we anticipate a well-established track record that will lay the foundation for a significant acceleration in AUM growth beyond this milestone. With increasing domestic participation in the private credit sector, capital pools are expanding to attract commercial capital. The RBI\u2019s decision to withdraw t"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.2692,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2692,
+              "chunk_text": "The GRI Content Index comprehensively captures the disclosed information with references to respective chapters, policies, data tables, annual report, etc. Assurance Statement Vivriti is committed to disclosure transparency and has sought for an external assurance from BDO India\u2019s Assurance Services. To ensure veracity of the disclosed information in the report, BDO India applied the ISAE 3000 Limited Assurance requirements, wherein they conducted series of audits, interviews with respective dat"
+            },
+            {
+              "similarity": 0.1832,
+              "chunk_text": "The assurance statement includes \u201cdeclaration of independence\u201d from BDO India, ensuring no conflict of interest in the assurance undertaken. The scope of the assurance statement clearly specifies the coverage of all non-financial information in the report and the type of assurance (\u201climited assurance\u201d) used. Please refer to \u2018BDO\u2019s Assurance Certificate\u2019. Heartfelt Gratitude We thank all our stakeholders including our investors, investees, board members, employees and community partners for their"
+            },
+            {
+              "similarity": 0.153,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.3741,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3741,
+              "chunk_text": "STEERING THE WAYSUSTAINED PATHWAYS 03SUSTAINABILITY REPORT 2024-25 PROLOGUESUSTAINED PATHWAYSS&I ROOTED IN PURPOSEOUR TRAJECTORY LAST-MILE IMPACTCLIMATE UNDERPINNEDEQUITY EMBEDDEDETHICS CENTEREDCONTINUED COLLABORATIONGRI INDEXGLOSSARY ASSURANCE CERTIFICATE The past financial year has been marked by significant shifts in incumbent governments, disruptions in the banking sector, and capital market volatilities. Stricter domestic regulations aimed at tightening liquidity and increasing scrutiny on "
+            },
+            {
+              "similarity": 0.3463,
+              "chunk_text": "We bring this commitment to life through a robust business model that optimizes operational efficiency while maintaining exceptional asset quality. Since our inception, we have addressed the debt financing needs of 496 mid-market enterprises. Through strategic co-lending transactions, our impact has expanded significantly, now having with 47 partners and their ecosystem of 2.2 Mn retail borrowers. Our strategic presence in Singapore and Gujarat\u2019s GIFT City, along with a rapidly expanding domesti"
+            },
+            {
+              "similarity": 0.3452,
+              "chunk_text": "As VAM enters its 7th year and progresses toward the full exit of the Vivriti Alpha Debt Fund, Vivriti Alpha Debt Enhanced Fund and Vivriti Emerging Corporate Bond Fund, expected in Q3 FY 2026-27, we anticipate a well-established track record that will lay the foundation for a significant acceleration in AUM growth beyond this milestone. With increasing domestic participation in the private credit sector, capital pools are expanding to attract commercial capital. The RBI\u2019s decision to withdraw t"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "d7b5fcee-7edd-4abd-ba4d-6b4b5afdebab_1754051517.pdf",
+      "document_type": "generic_pdf",
+      "risk_flags": [],
+      "confidence_score": 0.7,
+      "evidence_coverage_score": 0.3639,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.3226,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3226,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            },
+            {
+              "similarity": 0.248,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            },
+            {
+              "similarity": 0.2064,
+              "chunk_text": "The ALCO committee is responsible for framing, implementing and monitoring the Liquidity Risk Management Framework including the ALM framework. It is also responsible for ensuring adherence to the various limits set by the regulator, Board and Board Sub Co mmittee."
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.5189,
+          "evidence_chunks": [
+            {
+              "similarity": 0.5189,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            },
+            {
+              "similarity": 0.4813,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            },
+            {
+              "similarity": 0.4411,
+              "chunk_text": "crore) * % of Total deposits % of Total Liabilities 1. 1 148.70 Not Applicable 21.08% S. No. Name of the instrument/product Amount (Rs. crore) * % of Total Liabilities 1 Term Loans 373.29 52.92 % 2 Non -Convertible debentures 285.89 40.53 % Total 659.18 93.45% Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 (v) Stock Ratio S. No."
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.3522,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3522,
+              "chunk_text": "The ALCO committee is responsible for framing, implementing and monitoring the Liquidity Risk Management Framework including the ALM framework. It is also responsible for ensuring adherence to the various limits set by the regulator, Board and Board Sub Co mmittee."
+            },
+            {
+              "similarity": 0.3002,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            },
+            {
+              "similarity": 0.2806,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.3912,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3912,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            },
+            {
+              "similarity": 0.3833,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            },
+            {
+              "similarity": 0.3128,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4566,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4566,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            },
+            {
+              "similarity": 0.4323,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            },
+            {
+              "similarity": 0.4202,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.3324,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3324,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            },
+            {
+              "similarity": 0.3213,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            },
+            {
+              "similarity": 0.2826,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.1337,
+          "evidence_chunks": [
+            {
+              "similarity": 0.1337,
+              "chunk_text": "crore) * % of Total deposits % of Total Liabilities 1. 1 148.70 Not Applicable 21.08% S. No. Name of the instrument/product Amount (Rs. crore) * % of Total Liabilities 1 Term Loans 373.29 52.92 % 2 Non -Convertible debentures 285.89 40.53 % Total 659.18 93.45% Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 (v) Stock Ratio S. No."
+            },
+            {
+              "similarity": 0.1056,
+              "chunk_text": "Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 Public Disclosure on Liquidity Risk as on June 30, 202 5 {Pursuant to RBI Master Direction \u2013 Reserve Bank of India (Non -Banking Financial Company \u2013 Scale Based Regulation) Directions, 2023 } (i) Funding Concentration based on significant counterparty (both deposits and borrowings) \u2022 Total Liabil"
+            },
+            {
+              "similarity": 0.1002,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.404,
+          "evidence_chunks": [
+            {
+              "similarity": 0.404,
+              "chunk_text": "\u2022 Significant counterparty is as defined in RBI Circular RBI/2019 -20/88 DOR.NBFC (PD) CC.No.102/03.10.001/2019 -20 dated 4th November 2019 on Liquidity Risk Management Framework for Non -Banking Financial Companies and Core Investment Companies. \u2022 * Amount taken as per IGAAP Values. (ii) Top 20 large deposits (amount in Rs. crore and % of total deposits) Not Applicable (iii) Top 10 borrowings (amount in Rs. crore and % of total borrowings ) Amount in Rs. Crore* 370.72 % of total borrowings 55.2"
+            },
+            {
+              "similarity": 0.3978,
+              "chunk_text": "Particulars Total Public Funds Total Liabilities Total Assets A Commercial papers as a % of NA NA NA B Non -convertible debentures (original maturity of less than one year) as a % of NA NA NA C Other short -term liabilities as a % of 52.79% 50.25% 36.65% (vi) Institutional set -up for liquidity risk management: The Board, through the Asset -Liability Management Committee (ALCO) shall have overall responsibility for management of liquidity risk. The ALCO shall decide the strategy, policies and pr"
+            },
+            {
+              "similarity": 0.3855,
+              "chunk_text": "crore) * % of Total deposits % of Total Liabilities 1. 1 148.70 Not Applicable 21.08% S. No. Name of the instrument/product Amount (Rs. crore) * % of Total Liabilities 1 Term Loans 373.29 52.92 % 2 Non -Convertible debentures 285.89 40.53 % Total 659.18 93.45% Corp orate Office - Block A, DLF Building 8, 4th Floor DLF Cyber City, Gurugram, Haryana, India, 122002 Head Office - 411A, Kanakia Wallstreet, Chakala, Andheri Kurla Rd, Andheri (East), Mumbai - 400093 (v) Stock Ratio S. No."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "5e221ef7-0c15-4579-b257-c0f69f976dc1_1754045722.pdf",
+      "document_type": "generic_pdf",
+      "risk_flags": [],
+      "confidence_score": 0.98,
+      "evidence_coverage_score": 0.3147,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.2554,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2554,
+              "chunk_text": "Of Partly paid- up equity shares held (V)No. Of shares underlying Depository Receipts (VI)Total nos. shares held (VII) = (IV)+ (V)+ (VI)Shareholding as a % of total no. of shares (calculated as per SCRR, 1957) (VIII) As a % of (A+B+C2)Number of Voting Rights held in each class of securities (IX) No. Of Shares Underlying Outstanding convertible securities (XA)No. of Shares Underlying Outstanding Warrants (XB)No. Of Outstanding ESOP Granted (XC)No. of Shares Underlying Outstanding convertible secu"
+            },
+            {
+              "similarity": 0.2408,
+              "chunk_text": "of fully paid up equity shares held (IV)420588 420588 Total nos. shares held (VII) = (IV)+ (V)+ (VI)420588 420588 Shareholding as a % of total no. of shares (calculated as per SCRR, 1957) (VIII) As a % of (A+B+C2)1.29 1.29 Number of Voting Rights held in each class of securities (IX) Class eg: X 420588 420588 Total 420588 420588 Total as a % of Total Voting rights1.29 1.29 No. of Shares Underlying Outstanding Warrants (XB)0 0 No. Of Outstanding ESOP Granted (XC)0 0 No. of Shares Underlying Outst"
+            },
+            {
+              "similarity": 0.2341,
+              "chunk_text": "No Table VI - Statement showing for eign ownership limits Particular Appr oved limits (%) Limits utilized (%) As on shareholding date 100 0.52 As on the end of previous 1st quarter 100 0.53 As on the end of previous 2nd quarter 100 0.53 As on the end of previous 3rd quarter 100 0.62 As on the end of previous 4th quarter 100 0.61 Table I - Summary Statement holding of specified securities Category (I)Category of shareholder (II)Nos. Of shareholders (III)No. of fully paid up equity shares held (IV"
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.335,
+          "evidence_chunks": [
+            {
+              "similarity": 0.335,
+              "chunk_text": "Total Shareholding of Promoter and Promoter Group (A)= (A)(1)+(A) (2)4 14583037 14583037 44.59 14583037 14583037 44.59 1527000 1527000 16110037 B Table III - Statement showing shareholding pattern of the Public shareholder (1) Institutions (Domestic) (c)Alternate Investment Funds1 420588 420588 1.29 420588 420588 1.29 0 0 0 420588 Sub-T otal (B)(1)1 420588 420588 1.29 420588 420588 1.29 0 0 0 420588 (2) Institutions (Foreign) (3) Central Government / State Government(s) (4) Non-institutions (g)R"
+            },
+            {
+              "similarity": 0.3301,
+              "chunk_text": "of shares on fully diluted basis (including warrants and Convertible Securities etc.) (XI)=(VII+X)13406037 13406037 Shareholding , as a % assuming full conversion of convertible securities ( as a percentage of diluted share capital) (XII)= (VII)+(X) As a % of (A+B+C2)35.89 35.89 Number of Locked in shares (XIII) No. (a) 0 0 As a % of total Shares held (b)0 0 Number of equity shares held in dematerialized form (XVIII)13406037 13406037 Reason for not providing P AN Reason for not providing P AN Sh"
+            },
+            {
+              "similarity": 0.3236,
+              "chunk_text": "(a)As a % of total Shares held (b)Sub- category (i)Sub- category (ii)Sub- category (iii) A Table II - Statement showing shareholding pattern of the Promoter and Promoter Group (1) Indian (a)Individuals/Hindu undivided Family7.24 577000 49.02 1177000 (d)Any Other (specify)35.89 0 0 13406037 Sub-T otal (A)(1)43.13 577000 3.96 14583037 (2) Foreign Total Shareholding of Promoter and Promoter Group (A)= (A)(1)+(A) (2)43.13 577000 3.96 14583037 B Table III - Statement showing shareholding pattern of t"
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.3375,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3375,
+              "chunk_text": "Total Shareholding of Promoter and Promoter Group (A)= (A)(1)+(A) (2)4 14583037 14583037 44.59 14583037 14583037 44.59 1527000 1527000 16110037 B Table III - Statement showing shareholding pattern of the Public shareholder (1) Institutions (Domestic) (c)Alternate Investment Funds1 420588 420588 1.29 420588 420588 1.29 0 0 0 420588 Sub-T otal (B)(1)1 420588 420588 1.29 420588 420588 1.29 0 0 0 420588 (2) Institutions (Foreign) (3) Central Government / State Government(s) (4) Non-institutions (g)R"
+            },
+            {
+              "similarity": 0.3338,
+              "chunk_text": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / extinguishment (in case Capital Restructuring selected) / Listing Date Shareholding pattern filed under Regulation 31 (1) (b) Whether the listed entity"
+            },
+            {
+              "similarity": 0.3205,
+              "chunk_text": "(a)As a % of total Shares held (b)Sub- category (i)Sub- category (ii)Sub- category (iii) A Table II - Statement showing shareholding pattern of the Promoter and Promoter Group (1) Indian (a)Individuals/Hindu undivided Family7.24 577000 49.02 1177000 (d)Any Other (specify)35.89 0 0 13406037 Sub-T otal (A)(1)43.13 577000 3.96 14583037 (2) Foreign Total Shareholding of Promoter and Promoter Group (A)= (A)(1)+(A) (2)43.13 577000 3.96 14583037 B Table III - Statement showing shareholding pattern of t"
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.3457,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3457,
+              "chunk_text": "No.Particular Yes/NoPromoter and Promoter GroupPublic shareholderNon Promoter - Non Public 1 Whether the Listed Entity has issued any partly paid up shares? No No No No 2 Whether the Listed Entity has issued any Convertible Securities ? No No No No 3 Whether the Listed Entity has issued any Warrants ? Yes Yes Yes No 4 Whether Listed Entity has granted any ESOPs, which are outstanding? Yes No Yes No 5Whether the Listed Entity has any shares against which depository receipts are issued?No No No No"
+            },
+            {
+              "similarity": 0.3042,
+              "chunk_text": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / extinguishment (in case Capital Restructuring selected) / Listing Date Shareholding pattern filed under Regulation 31 (1) (b) Whether the listed entity"
+            },
+            {
+              "similarity": 0.264,
+              "chunk_text": "No No 8Whether any shares held by promoters are encumbered under \"Non-Disposal Undertaking\"?No No 9Whether any shares held by promoters are encumbered, other than by way of Pledge or NDU, if any?No No 10 Whether company has equity shares with dif ferential voting rights? No No No No 11 Whether the listed entity has any significant beneficial owner?"
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.2929,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2929,
+              "chunk_text": "Individual shar eholders holding nominal shar e capital in excess of Rs. 2 lakhs. Sr. No. 1 2 3 4 5 6 7 Name of the Shareholders (I)Rajiv Goel and Sons HUF Manish Prakash Rajiv Goel Swadesh Gupta Alpna Gupta Surinder Gar g Ruchika Gar g PAN (II) AAIHR2994A AARPP3392D ADFPG9012Q ADQPG621 1J ADVPG1592R AEQPG7705L AETPG1 148L No. of fully paid up equity shares held (IV)676876 361038 340360 3821 12 762419 369747 467271 Total nos. shares held (VII) = (IV)+ (V)+ (VI)676876 361038 340360 3821 12 762419"
+            },
+            {
+              "similarity": 0.2718,
+              "chunk_text": "No Table VI - Statement showing for eign ownership limits Particular Appr oved limits (%) Limits utilized (%) As on shareholding date 100 0.52 As on the end of previous 1st quarter 100 0.53 As on the end of previous 2nd quarter 100 0.53 As on the end of previous 3rd quarter 100 0.62 As on the end of previous 4th quarter 100 0.61 Table I - Summary Statement holding of specified securities Category (I)Category of shareholder (II)Nos. Of shareholders (III)No. of fully paid up equity shares held (IV"
+            },
+            {
+              "similarity": 0.2348,
+              "chunk_text": "Of Partly paid- up equity shares held (V)No. Of shares underlying Depository Receipts (VI)Total nos. shares held (VII) = (IV)+ (V)+ (VI)Shareholding as a % of total no. of shares (calculated as per SCRR, 1957) (VIII) As a % of (A+B+C2)Number of Voting Rights held in each class of securities (IX) No. Of Shares Underlying Outstanding convertible securities (XA)No. of Shares Underlying Outstanding Warrants (XB)No. Of Outstanding ESOP Granted (XC)No. of Shares Underlying Outstanding convertible secu"
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.3165,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3165,
+              "chunk_text": "No Table VI - Statement showing for eign ownership limits Particular Appr oved limits (%) Limits utilized (%) As on shareholding date 100 0.52 As on the end of previous 1st quarter 100 0.53 As on the end of previous 2nd quarter 100 0.53 As on the end of previous 3rd quarter 100 0.62 As on the end of previous 4th quarter 100 0.61 Table I - Summary Statement holding of specified securities Category (I)Category of shareholder (II)Nos. Of shareholders (III)No. of fully paid up equity shares held (IV"
+            },
+            {
+              "similarity": 0.3142,
+              "chunk_text": "No.Particular Yes/NoPromoter and Promoter GroupPublic shareholderNon Promoter - Non Public 1 Whether the Listed Entity has issued any partly paid up shares? No No No No 2 Whether the Listed Entity has issued any Convertible Securities ? No No No No 3 Whether the Listed Entity has issued any Warrants ? Yes Yes Yes No 4 Whether Listed Entity has granted any ESOPs, which are outstanding? Yes No Yes No 5Whether the Listed Entity has any shares against which depository receipts are issued?No No No No"
+            },
+            {
+              "similarity": 0.266,
+              "chunk_text": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / extinguishment (in case Capital Restructuring selected) / Listing Date Shareholding pattern filed under Regulation 31 (1) (b) Whether the listed entity"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.2462,
+          "evidence_chunks": [
+            {
+              "similarity": 0.2462,
+              "chunk_text": "No.Particular Yes/NoPromoter and Promoter GroupPublic shareholderNon Promoter - Non Public 1 Whether the Listed Entity has issued any partly paid up shares? No No No No 2 Whether the Listed Entity has issued any Convertible Securities ? No No No No 3 Whether the Listed Entity has issued any Warrants ? Yes Yes Yes No 4 Whether Listed Entity has granted any ESOPs, which are outstanding? Yes No Yes No 5Whether the Listed Entity has any shares against which depository receipts are issued?No No No No"
+            },
+            {
+              "similarity": 0.2324,
+              "chunk_text": "3 55.41 18121563 18121563 55.41 2210745 907750 3118495 21240058 C Table IV - Statement showing shareholding pattern of the Non Promoter - Non Public shareholder Total ( A+B+C2 )4054 32704600 32704600 100 32704600 32704600 100 3737745 907750 4645495 37350095 Total (A+B+C )4054 32704600 32704600 100 32704600 32704600 100 3737745 907750 4645495 37350095 Table II - Statement showing shar eholding pattern of the Pr omoter and Pr omoter Group Sr."
+            },
+            {
+              "similarity": 0.2081,
+              "chunk_text": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / extinguishment (in case Capital Restructuring selected) / Listing Date Shareholding pattern filed under Regulation 31 (1) (b) Whether the listed entity"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.3884,
+          "evidence_chunks": [
+            {
+              "similarity": 0.3884,
+              "chunk_text": "No.Particular Yes/NoPromoter and Promoter GroupPublic shareholderNon Promoter - Non Public 1 Whether the Listed Entity has issued any partly paid up shares? No No No No 2 Whether the Listed Entity has issued any Convertible Securities ? No No No No 3 Whether the Listed Entity has issued any Warrants ? Yes Yes Yes No 4 Whether Listed Entity has granted any ESOPs, which are outstanding? Yes No Yes No 5Whether the Listed Entity has any shares against which depository receipts are issued?No No No No"
+            },
+            {
+              "similarity": 0.3405,
+              "chunk_text": "No No 8Whether any shares held by promoters are encumbered under \"Non-Disposal Undertaking\"?No No 9Whether any shares held by promoters are encumbered, other than by way of Pledge or NDU, if any?No No 10 Whether company has equity shares with dif ferential voting rights? No No No No 11 Whether the listed entity has any significant beneficial owner?"
+            },
+            {
+              "similarity": 0.2778,
+              "chunk_text": "General information about company Scrip code 538446 NSE Symbol NOTLISTED MSEI Symbol NOTLISTED ISIN INE296Q01012 Name of the company MONEYBOXX FINANCE LIMITED Whether company is SME No Class of Security Equity Shares Type of report Quarterly Quarter Ended / Half year ended/Date of Report (For Prelisting / Allotment) 30-06-2025 Date of allotment / extinguishment (in case Capital Restructuring selected) / Listing Date Shareholding pattern filed under Regulation 31 (1) (b) Whether the listed entity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "document_name": "af83032e-85a2-4ff6-8dd0-d333371181da_1756892129.pdf",
+      "document_type": "generic_pdf",
+      "risk_flags": [
+        "Default-related reference detected",
+        "NPA wording detected"
+      ],
+      "confidence_score": 0.8,
+      "evidence_coverage_score": 0.4219,
+      "top_evidence": [
+        {
+          "label": "Litigation risk",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of litigation risk, insolvency proceedings, recovery action, default, or legal disputes",
+          "top_similarity": 0.316,
+          "evidence_chunks": [
+            {
+              "similarity": 0.316,
+              "chunk_text": "1 About the Repor t 2 Contribution to UN SDGs 6 Letter fr om the Co-Founders 8 About Mone yboxx 10 A wards 13 Operating Context 14 Strateg y 17 Stak eholder Engagement 20 Risk Mitigation 22 V alue Creation Model 26 Financial Ca pital 28 Man ufactured Capital 30 Human Ca pital 34 Intellectual Ca pital 38 Natural Ca pital 41 Social and Relationship Ca pital 43 Go vernance 48 Corporate Inf ormation 53Corporate Overview Key Highlights Cautionary Statement Statements made in this report describe the "
+            },
+            {
+              "similarity": 0.2719,
+              "chunk_text": "The Company is not under any obligation to publicly amend, modify or revise any forward-looking statements on the basis of any subsequent developments, information or events.Board\u2019s Report 54 Management Discussion & Analysis 71 Corporate Go vernance Report 79Statutory Reports Independent Auditor\u2019s Report 100 Financial Statements f or FY 2024-25 108Financial StatementsContent 54-1561-53 `199 Crore `1,800 Crore+ 200k+`927 Crore `270 Crore T o download this report online, please visit: moneyboxxfin"
+            },
+            {
+              "similarity": 0.2685,
+              "chunk_text": "elihoods Impacted till March 2025Assets Under Management (AUM) Cumulative Equity raised till March 2025 Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Trusted Lending."
+            }
+          ]
+        },
+        {
+          "label": "Sector headwinds",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of sector headwinds, regulatory tightening, RBI restrictions, liquidity risk, or market stress",
+          "top_similarity": 0.401,
+          "evidence_chunks": [
+            {
+              "similarity": 0.401,
+              "chunk_text": "Integrated Report 2024-25 | 03 Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Capitals impacted Financial Capital Intellectual CapitalNatural CapitalHuman CapitalManufactured CapitalSocial and Relationship Capital Value created for the stakeholders Society And Community CustomersEmployeesInvestorsRegulatorsInfluenced through external operating environment including the megatrends, opportunities and risks Megatrends and Opportunities Macroeconomic shifts Credit gap am"
+            },
+            {
+              "similarity": 0.3907,
+              "chunk_text": "The Company is not under any obligation to publicly amend, modify or revise any forward-looking statements on the basis of any subsequent developments, information or events.Board\u2019s Report 54 Management Discussion & Analysis 71 Corporate Go vernance Report 79Statutory Reports Independent Auditor\u2019s Report 100 Financial Statements f or FY 2024-25 108Financial StatementsContent 54-1561-53 `199 Crore `1,800 Crore+ 200k+`927 Crore `270 Crore T o download this report online, please visit: moneyboxxfin"
+            },
+            {
+              "similarity": 0.376,
+              "chunk_text": "1 About the Repor t 2 Contribution to UN SDGs 6 Letter fr om the Co-Founders 8 About Mone yboxx 10 A wards 13 Operating Context 14 Strateg y 17 Stak eholder Engagement 20 Risk Mitigation 22 V alue Creation Model 26 Financial Ca pital 28 Man ufactured Capital 30 Human Ca pital 34 Intellectual Ca pital 38 Natural Ca pital 41 Social and Relationship Ca pital 43 Go vernance 48 Corporate Inf ormation 53Corporate Overview Key Highlights Cautionary Statement Statements made in this report describe the "
+            }
+          ]
+        },
+        {
+          "label": "Governance",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of strong governance, board oversight, assurance, audit quality, ESG controls, or compliance culture",
+          "top_similarity": 0.5467,
+          "evidence_chunks": [
+            {
+              "similarity": 0.5467,
+              "chunk_text": "In addition, the statutory reports, including the Board\u2019s Report, Management Discussion and Analysis (MDA), Corporate Governance Report, comply with the Companies Act 2013, the Securities Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations 2015, RBI Regulations, and the prescribed Secretarial Standards. Responsibility Statement The Board of Directors affirms the integrity of this Integrated Report, drawing on its collective expertise and oversight. The content h"
+            },
+            {
+              "similarity": 0.4768,
+              "chunk_text": "1 About the Repor t 2 Contribution to UN SDGs 6 Letter fr om the Co-Founders 8 About Mone yboxx 10 A wards 13 Operating Context 14 Strateg y 17 Stak eholder Engagement 20 Risk Mitigation 22 V alue Creation Model 26 Financial Ca pital 28 Man ufactured Capital 30 Human Ca pital 34 Intellectual Ca pital 38 Natural Ca pital 41 Social and Relationship Ca pital 43 Go vernance 48 Corporate Inf ormation 53Corporate Overview Key Highlights Cautionary Statement Statements made in this report describe the "
+            },
+            {
+              "similarity": 0.436,
+              "chunk_text": "Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Business activities that support growth 01 03 02 T o know more please visit: https://moneyboxxfinance.com/about-moneyboxx-financeMoneyboxx Vyapaar Loans (Secured)Moneyboxx Vyapaar Loans (Unsecured)Sikka AppOur Strategy Our Values Customer Satisfaction TeamworkTransparencyTrust and RespectInnovation Integrity Excellence S1 S3 S5S2 S4 S6Building a robust national franchise Improving collection trends Robust financial funda"
+            }
+          ]
+        },
+        {
+          "label": "Risk-flag density",
+          "type": "score_driver",
+          "impact": "negative_to_credit",
+          "query": "evidence of risk disclosures, defaults, NPAs, fraud, overdue exposures, or related party concerns",
+          "top_similarity": 0.4366,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4366,
+              "chunk_text": "This process ensures the information disclosed is accurate, complete, relevant, and reliable. Scope of Reporting This report covers both financial and non-financial disclosures for the period April 1, 2024 to March 31, 2025. All financial information presented herein has been audited by the Statutory Auditors - M/s Gaur & Associates, Chartered Accountants. 02 | Moneyboxx Finance Ltd."
+            },
+            {
+              "similarity": 0.4274,
+              "chunk_text": "1 About the Repor t 2 Contribution to UN SDGs 6 Letter fr om the Co-Founders 8 About Mone yboxx 10 A wards 13 Operating Context 14 Strateg y 17 Stak eholder Engagement 20 Risk Mitigation 22 V alue Creation Model 26 Financial Ca pital 28 Man ufactured Capital 30 Human Ca pital 34 Intellectual Ca pital 38 Natural Ca pital 41 Social and Relationship Ca pital 43 Go vernance 48 Corporate Inf ormation 53Corporate Overview Key Highlights Cautionary Statement Statements made in this report describe the "
+            },
+            {
+              "similarity": 0.4245,
+              "chunk_text": "In addition, the statutory reports, including the Board\u2019s Report, Management Discussion and Analysis (MDA), Corporate Governance Report, comply with the Companies Act 2013, the Securities Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations 2015, RBI Regulations, and the prescribed Secretarial Standards. Responsibility Statement The Board of Directors affirms the integrity of this Integrated Report, drawing on its collective expertise and oversight. The content h"
+            }
+          ]
+        },
+        {
+          "label": "Cash-flow stability",
+          "type": "score_driver",
+          "impact": "positive_to_credit",
+          "query": "evidence of stable cash flow, liquidity strength, collections, repayment discipline, or balance sheet resilience",
+          "top_similarity": 0.4919,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4919,
+              "chunk_text": "A clear pivot to secured lending, supported by robust risk framework and enhanced collection infrastructure, is delivering tangible improvements in performance. Further, the provisioning discipline and governance practices are reflecting our stability-first mindset. As we strengthen the book, we also broaden our reach. Operating in 12 states, our phygital model blends branch-level presence with digital workflow across origination, disbursement, and collection. Integration of Sikka app reinforces"
+            },
+            {
+              "similarity": 0.4742,
+              "chunk_text": "Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Business activities that support growth 01 03 02 T o know more please visit: https://moneyboxxfinance.com/about-moneyboxx-financeMoneyboxx Vyapaar Loans (Secured)Moneyboxx Vyapaar Loans (Unsecured)Sikka AppOur Strategy Our Values Customer Satisfaction TeamworkTransparencyTrust and RespectInnovation Integrity Excellence S1 S3 S5S2 S4 S6Building a robust national franchise Improving collection trends Robust financial funda"
+            },
+            {
+              "similarity": 0.4398,
+              "chunk_text": "e credit activities and minimise environmental impact \u2022Strategic par tnerships in place to achieve/impact UN SDGs \u202246,700+ unique w omen customers & `10,300 million disbursed to women borrowers \u20221,200+ wido wed funded \u202224,900+ NTC funded & ` 4,047+ million disbursed \u2022` 2,340+ million disbursed to 14,150+ women NTC borrowers \u2022163 branches acr oss 12 states in India \u2022` 18,020+ million amount disbursed \u2022Disbursed 65,800+ loans amounting to ` 11,600+ million since inception \u2022V eterinary services to "
+            }
+          ]
+        },
+        {
+          "label": "Default-related reference detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning default, delayed repayment, covenant breach, or credit stress",
+          "top_similarity": 0.4269,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4269,
+              "chunk_text": "The foundation enabled us to scale \u2013 driving inclusion through structured, tech- enabled credit delivery that reflects our belief in Trusted Lending. Boundless Reach. Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 01 About the Report Basis of Reporting Moneyboxx Finance Limited (\u201cwe\u201d, \u201cour\u201d, \u201cus\u201d or \u201cthe Company\u201d) publishes this Integrated Report (IR) as a comprehensive disclosure tool for stakeholders. This is our third IR, presenting the performance for FY 2024-25 "
+            },
+            {
+              "similarity": 0.4211,
+              "chunk_text": "elihoods Impacted till March 2025Assets Under Management (AUM) Cumulative Equity raised till March 2025 Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Trusted Lending."
+            },
+            {
+              "similarity": 0.4086,
+              "chunk_text": "This year, we made a strategic pivot to secured lending \u2013 protecting credit quality, enabling higher ticket sizes, and offering longer tenures. Alongside, we: \u2022 Rolled out a dedicated recovery framework with advanced data tools and robust legal processes\u2022 Expanded ou r institutional lender base to 33 partners \u2022 Enhanced dig ital capabilities with platforms such as the Sikka app \u2022 Str eamlined credit processes for faster, more controlled, and customer-first lending These step"
+            }
+          ]
+        },
+        {
+          "label": "Fraud wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning fraud, misconduct, misstatement, or investigation",
+          "top_similarity": 0.297,
+          "evidence_chunks": [
+            {
+              "similarity": 0.297,
+              "chunk_text": "This process ensures the information disclosed is accurate, complete, relevant, and reliable. Scope of Reporting This report covers both financial and non-financial disclosures for the period April 1, 2024 to March 31, 2025. All financial information presented herein has been audited by the Statutory Auditors - M/s Gaur & Associates, Chartered Accountants. 02 | Moneyboxx Finance Ltd."
+            },
+            {
+              "similarity": 0.2846,
+              "chunk_text": "The Company is not under any obligation to publicly amend, modify or revise any forward-looking statements on the basis of any subsequent developments, information or events.Board\u2019s Report 54 Management Discussion & Analysis 71 Corporate Go vernance Report 79Statutory Reports Independent Auditor\u2019s Report 100 Financial Statements f or FY 2024-25 108Financial StatementsContent 54-1561-53 `199 Crore `1,800 Crore+ 200k+`927 Crore `270 Crore T o download this report online, please visit: moneyboxxfin"
+            },
+            {
+              "similarity": 0.2705,
+              "chunk_text": "In addition, the statutory reports, including the Board\u2019s Report, Management Discussion and Analysis (MDA), Corporate Governance Report, comply with the Companies Act 2013, the Securities Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations 2015, RBI Regulations, and the prescribed Secretarial Standards. Responsibility Statement The Board of Directors affirms the integrity of this Integrated Report, drawing on its collective expertise and oversight. The content h"
+            }
+          ]
+        },
+        {
+          "label": "NPA wording detected",
+          "type": "risk_flag",
+          "impact": "negative_to_credit",
+          "query": "evidence mentioning non-performing assets, NPA, stressed assets, or impaired loans",
+          "top_similarity": 0.4591,
+          "evidence_chunks": [
+            {
+              "similarity": 0.4591,
+              "chunk_text": "Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 UN SDGs Our approach Progress so far \u2022Pr omote women's financial independence to help reduce social inequalities \u2022Making cr edit accessible to first time borrowers \u2022Pr omote inclusive and safe communities by extending financial assistance and advancing financial inclusion \u2022Pr omote responsible consumption and production among agri-borrowers by helping optimise their assets \u2022Reduce carbon f ootprint through fruit-bearing "
+            },
+            {
+              "similarity": 0.4444,
+              "chunk_text": "Statutory Reports 54-99Financial Statements 100-156Corporate Overview 01-53 Business activities that support growth 01 03 02 T o know more please visit: https://moneyboxxfinance.com/about-moneyboxx-financeMoneyboxx Vyapaar Loans (Secured)Moneyboxx Vyapaar Loans (Unsecured)Sikka AppOur Strategy Our Values Customer Satisfaction TeamworkTransparencyTrust and RespectInnovation Integrity Excellence S1 S3 S5S2 S4 S6Building a robust national franchise Improving collection trends Robust financial funda"
+            },
+            {
+              "similarity": 0.4366,
+              "chunk_text": "Trusted Lending. Boundless Reach.Integrated Report 2024-25 Trusted Lending. Boundless Reach."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

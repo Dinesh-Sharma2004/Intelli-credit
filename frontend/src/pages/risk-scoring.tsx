@@ -1,165 +1,117 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Layout } from '@/components/Layout'
-import { Badge, StatCard, Alert } from '@/components/UI'
+import { Badge, StatCard, Alert, Table, PDGaugeMeter, RiskHeatmapCard, AnomalyAlertPanel, ResearchIntelligenceTimeline, CovenantSuggestionsSection, SanctionSliderSimulator } from '@/components/UI'
 import { AlertCircle, TrendingUp } from 'lucide-react'
+import { useCreditApplication } from '@/context/CreditApplicationContext'
+
+function badgeType(impact: string) {
+  return impact === 'negative_to_credit' ? 'warning' : 'success'
+}
 
 export default function RiskScoringPage() {
-  const [selectedCompany] = useState({
-    name: 'TechVenture Solutions Pvt Ltd',
-    revenue: 245.67,
-    ebitda: 45.35,
-    debt: 150.0,
-    cash: 38.5,
-    pd: 0.0625,
-    grade: 'A',
-    loanLimit: 15.50,
-    rate: 0.1175,
-  })
+  const { snapshot, runDecisioning, isLoading } = useCreditApplication()
 
-  const riskDrivers = [
-    {
-      factor: 'Debt-to-Equity Ratio',
-      value: 1.50,
-      threshold: 1.20,
-      status: 'MEDIUM',
-      impact: -0.15,
-    },
-    {
-      factor: 'Litigation Exposure',
-      value: 2,
-      threshold: 0,
-      status: 'MEDIUM-LOW',
-      impact: -0.08,
-    },
-    {
-      factor: 'Industry Competition',
-      value: 0.68,
-      threshold: 0.75,
-      status: 'MEDIUM',
-      impact: -0.12,
-    },
-  ]
+  if (!snapshot?.scorecard) {
+    return (
+      <Layout>
+        <Alert
+          type="info"
+          title="Scoring Not Available"
+          message="Run backend decisioning after document upload to populate the score, grade, SHAP explanations, and recommendation."
+        />
+      </Layout>
+    )
+  }
 
-  const positiveDrivers = [
-    {
-      factor: 'Revenue Growth',
-      value: 0.32,
-      benchmark: 0.15,
-      status: 'STRONG',
-      impact: 0.25,
-    },
-    {
-      factor: 'EBITDA Margin',
-      value: 0.185,
-      benchmark: 0.12,
-      status: 'STRONG',
-      impact: 0.20,
-    },
-    {
-      factor: 'Interest Coverage',
-      value: 4.5,
-      benchmark: 3.0,
-      status: 'HEALTHY',
-      impact: 0.22,
-    },
-  ]
-
-  const featureContribution = [
-    { feature: 'Debt-to-Equity', contribution: -12, pct: '-15%' },
-    { feature: 'Interest Coverage', contribution: 18, pct: '+22%' },
-    { feature: 'Revenue Growth', contribution: 20, pct: '+25%' },
-    { feature: 'EBITDA Margin', contribution: 16, pct: '+20%' },
-    { feature: 'Current Ratio', contribution: 15, pct: '+18%' },
-    { feature: 'Management Quality', contribution: 12, pct: '+15%' },
-  ]
+  const { application, scorecard, research_hits, cockpit, anomaly_result, early_warning_result, research_graph } = snapshot
+  const riskDrivers = scorecard.shap_explanation.filter((item) => item.impact === 'negative_to_credit')
+  const positiveDrivers = scorecard.shap_explanation.filter((item) => item.impact === 'positive_to_credit')
 
   return (
     <Layout>
       <div className="space-y-8">
-        {/* Header */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900">{selectedCompany.name}</h2>
-          <p className="text-gray-600 mt-2">Comprehensive Risk Assessment & Scoring</p>
+          <h2 className="text-3xl font-bold" style={{ color: 'var(--text-primary)' }}>{application.borrower_name}</h2>
+          <p className="mt-2" style={{ color: 'var(--text-secondary)' }}>Live backend scoring results</p>
         </div>
 
-        {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <StatCard label="PD Score" value={(selectedCompany.pd * 100).toFixed(2)} unit="%" color="orange" />
-          <StatCard label="Credit Grade" value={selectedCompany.grade} color="blue" />
-          <StatCard label="Loan Limit" value={`₹${selectedCompany.loanLimit}`} unit="Cr" color="green" />
-          <StatCard label="Interest Rate" value={(selectedCompany.rate * 100).toFixed(2)} unit="%" color="blue" />
+          <StatCard title="PD Score" value={(scorecard.probability_of_default * 100).toFixed(2)} unit="%" color="yellow" />
+          <StatCard title="Credit Grade" value={scorecard.risk_grade} color="blue" />
+          <StatCard title="Loan Limit" value={`₹${(scorecard.recommended_limit / 10000000).toFixed(2)}`} unit="Cr" color="green" />
+          <StatCard title="Interest Rate" value={(scorecard.recommended_rate * 100).toFixed(2)} unit="%" color="blue" />
         </div>
 
-        {/* Alerts */}
-        <div className="space-y-4">
-          <Alert
-            type="info"
-            title="Model Information"
-            message="Based on XGBoost ensemble with SHAP explainability. Model accuracy: 87%, AUC score: 0.92"
-          />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <PDGaugeMeter pd={scorecard.probability_of_default} grade={scorecard.risk_grade} />
+          <RiskHeatmapCard items={cockpit?.risk_heatmap || Object.entries(scorecard.score_breakdown).map(([dimension, value]) => ({ dimension, value }))} />
         </div>
 
-        {/* SHAP Feature Contribution */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6">SHAP Feature Contributions</h3>
+        <Alert
+          type="info"
+          title="Model Information"
+          message={`Model ${scorecard.model_version} generated this recommendation. ${scorecard.explanation_summary}`}
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <AnomalyAlertPanel title="Anomaly Alerts" items={anomaly_result?.anomaly_flags || cockpit?.anomaly_alerts || []} />
+          <AnomalyAlertPanel title="Early Warning Signals" items={early_warning_result?.early_warning_flags || cockpit?.early_warning_signals || []} />
+        </div>
+
+        <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+          <h3 className="text-lg font-semibold mb-6" style={{ color: 'var(--text-primary)' }}>SHAP-like Feature Contributions</h3>
           <div className="space-y-4">
-            {featureContribution.map((item) => (
+            {scorecard.shap_explanation.map((item) => (
               <div key={item.feature} className="space-y-2">
                 <div className="flex justify-between items-center">
-                  <span className="font-medium text-gray-900">{item.feature}</span>
-                  <span className={`font-bold ${item.contribution > 0 ? 'text-green-600' : 'text-red-600'}`}>
-                    {item.contribution > 0 ? '+' : ''}{item.contribution} ({item.pct})
+                  <span className="font-medium" style={{ color: 'var(--text-primary)' }}>{item.feature}</span>
+                  <span className={`font-bold ${item.contribution > 0 ? 'text-red-600' : 'text-green-600'}`}>
+                    {item.contribution > 0 ? '+' : ''}{item.contribution.toFixed(4)}
                   </span>
                 </div>
-                <div className="w-full flex gap-2">
-                  <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                    <div
-                      className={`h-full ${item.contribution > 0 ? 'bg-green-500' : 'bg-red-500'}`}
-                      style={{ width: `${Math.abs(item.contribution)}%` }}
-                    />
-                  </div>
+                {item.narrative_reason && <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{item.narrative_reason}</p>}
+                <div className="w-full rounded-full h-3 overflow-hidden" style={{ backgroundColor: 'var(--bg-tertiary)' }}>
+                  <div
+                    className={item.contribution > 0 ? 'bg-red-500 h-full' : 'bg-green-500 h-full'}
+                    style={{ width: `${Math.min(Math.abs(item.contribution) * 300, 100)}%` }}
+                  />
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Risk Drivers vs Positive Drivers */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Risk Drivers */}
-          <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}>
               <AlertCircle className="text-red-600" size={20} />
               Risk Drivers
             </h3>
             <div className="space-y-4">
               {riskDrivers.map((driver) => (
-                <div key={driver.factor} className="border-l-4 border-red-500 pl-4 py-2">
-                  <p className="font-medium text-gray-900">{driver.factor}</p>
-                  <p className="text-sm text-gray-600">Current: {driver.value} | Threshold: {driver.threshold}</p>
+                <div key={driver.feature} className="border-l-4 border-red-500 pl-4 py-2">
+                  <p className="font-medium" style={{ color: 'var(--text-primary)' }}>{driver.feature}</p>
                   <div className="flex justify-between items-center mt-2">
-                    <Badge label={driver.status} type="warning" />
-                    <span className="text-xs font-bold text-red-600">-{(Math.abs(driver.impact) * 100).toFixed(0)}% impact</span>
+                    <Badge label={driver.impact.replace(/_/g, ' ')} type={badgeType(driver.impact)} />
+                    <span className="text-xs font-bold text-red-600">{driver.contribution.toFixed(4)}</span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Positive Drivers */}
-          <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}>
               <TrendingUp className="text-green-600" size={20} />
               Positive Drivers
             </h3>
             <div className="space-y-4">
               {positiveDrivers.map((driver) => (
-                <div key={driver.factor} className="border-l-4 border-green-500 pl-4 py-2">
-                  <p className="font-medium text-gray-900">{driver.factor}</p>
-                  <p className="text-sm text-gray-600">Current: {driver.value} | Benchmark: {driver.benchmark}</p>
+                <div key={driver.feature} className="border-l-4 border-green-500 pl-4 py-2">
+                  <p className="font-medium" style={{ color: 'var(--text-primary)' }}>{driver.feature}</p>
                   <div className="flex justify-between items-center mt-2">
-                    <Badge label={driver.status} type="success" />
-                    <span className="text-xs font-bold text-green-600">+{(driver.impact * 100).toFixed(0)}% impact</span>
+                    <Badge label={driver.impact.replace(/_/g, ' ')} type={badgeType(driver.impact)} />
+                    <span className="text-xs font-bold text-green-600">{driver.contribution.toFixed(4)}</span>
                   </div>
                 </div>
               ))}
@@ -167,87 +119,67 @@ export default function RiskScoringPage() {
           </div>
         </div>
 
-        {/* Detailed Risk Assessment */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Risk Assessment Summary</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              {
-                title: 'Financial Risk',
-                components: ['Debt Levels', 'Profitability', 'Liquidity', 'Cash Flows'],
-                score: 7.2,
-              },
-              {
-                title: 'Operational Risk',
-                components: ['Management Quality', 'Customer Concentration', 'Supplier Risk'],
-                score: 7.8,
-              },
-              {
-                title: 'Market Risk',
-                components: ['Industry Growth', 'Competition', 'Regulatory Environment'],
-                score: 6.8,
-              },
-            ].map((risk) => (
-              <div
-                key={risk.title}
-                className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-4"
-              >
-                <h4 className="font-semibold text-gray-900 mb-3">{risk.title}</h4>
-                <ul className="space-y-2 mb-4">
-                  {risk.components.map((comp) => (
-                    <li key={comp} className="text-sm text-gray-700">
-                      ✓ {comp}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex items-end gap-2">
-                  <span className="text-2xl font-bold text-blue-600">{risk.score}</span>
-                  <span className="text-xs text-gray-600">/10</span>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+          <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Five Cs Breakdown</h3>
+          <Table
+            headers={['Dimension', 'Score']}
+            rows={Object.entries(scorecard.score_breakdown).map(([key, value]) => [
+              key.toUpperCase(),
+              `${(value * 10).toFixed(2)} / 10`,
+            ])}
+          />
         </div>
 
-        {/* Model Details */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Model Information</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { label: 'Model Type', value: 'XGBoost Ensemble' },
-              { label: 'Training Samples', value: '45,000' },
-              { label: 'Model Accuracy', value: '87%' },
-              { label: 'AUC Score', value: '0.92' },
-              { label: 'Calibration', value: 'EXCELLENT' },
-              { label: 'Features Used', value: '42' },
-              { label: 'Last Validation', value: '2024-02-28' },
-              { label: 'Version', value: 'v2.1.0' },
-            ].map((item) => (
-              <div key={item.label} className="bg-slate-50 rounded-lg p-4">
-                <p className="text-xs text-gray-600 mb-1">{item.label}</p>
-                <p className="font-semibold text-gray-900">{item.value}</p>
-              </div>
-            ))}
-          </div>
+        <div className="rounded-lg border p-6 shadow-sm glass-effect" style={{ borderColor: 'var(--border-color)' }}>
+          <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>Feature Vector</h3>
+          <Table
+            headers={['Feature', 'Backend Value']}
+            rows={Object.entries(scorecard.feature_vector).map(([key, value]) => [key, Number(value).toFixed(4)])}
+          />
         </div>
 
-        {/* Recommendations */}
-        <div className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-blue-900 mb-3">Recommendation</h3>
-          <p className="text-blue-800 mb-4">
-            APPROVE credit facility with recommended terms: ₹15.50 Cr @ 11.75% for 60 months
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <SanctionSliderSimulator bands={scorecard.sanction_simulation || cockpit?.sanction_simulation_bands || {}} />
+          <CovenantSuggestionsSection items={scorecard.covenant_recommendations || []} />
+        </div>
+
+        <ResearchIntelligenceTimeline
+          items={(research_hits || []).map((item) => ({
+            title: item.title,
+            subtitle: item.summary,
+            severity: item.severity,
+          }))}
+        />
+
+        {research_graph && (
+          <Alert
+            type="info"
+            title="Research Graph"
+            message={`Promoter risk ${research_graph.promoter_risk.toFixed(2)}, litigation risk ${research_graph.litigation_risk.toFixed(2)}, sector outlook ${research_graph.sector_outlook}.`}
+          />
+        )}
+
+        <div className="border-l-4 rounded-lg p-6" style={{ borderColor: 'var(--brand-blue)', backgroundColor: 'var(--bg-tertiary)' }}>
+          <h3 className="text-lg font-semibold mb-3" style={{ color: 'var(--brand-blue)' }}>Recommendation</h3>
+          <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
+            {scorecard.decision.toUpperCase()} at ₹{(scorecard.recommended_limit / 10000000).toFixed(2)} Cr and {(scorecard.recommended_rate * 100).toFixed(2)}%.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
-              Generate CAM
-            </button>
-            <button className="bg-white hover:bg-gray-50 border border-blue-600 text-blue-600 font-semibold py-2 px-4 rounded-lg transition-all">
-              Download Report
-            </button>
-            <button className="bg-white hover:bg-gray-50 border border-blue-600 text-blue-600 font-semibold py-2 px-4 rounded-lg transition-all">
-              View Details
-            </button>
-          </div>
+          {scorecard.pd_band && (
+            <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
+              PD band: {scorecard.pd_band.toUpperCase()} | Risk premium: {((scorecard.risk_premium || 0) * 100).toFixed(2)}%
+            </p>
+          )}
+          <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
+            Research hits considered: {research_hits.length}
+          </p>
+          <button
+            onClick={() => runDecisioning()}
+            disabled={isLoading}
+            className="font-semibold py-2 px-4 rounded-lg"
+            style={{ backgroundColor: 'var(--brand-blue)', color: 'white' }}
+          >
+            Recompute From Backend
+          </button>
         </div>
       </div>
     </Layout>

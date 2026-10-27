@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { API_BASE_URL } from '@/lib/intelliCreditApi'
 
 interface DownloadOptions {
   onSuccess?: () => void
@@ -88,7 +89,7 @@ export function useDocumentDownload() {
     ) => {
       const apiUrl = endpoint.startsWith('http')
         ? endpoint
-        : `http://localhost:8000${endpoint}`
+        : `${API_BASE_URL.replace('/api/v1', '')}${endpoint}`
       
       await downloadFile(apiUrl, filename, options)
     },

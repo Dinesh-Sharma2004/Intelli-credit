@@ -5,12 +5,14 @@ type Theme = 'light' | 'dark'
 interface ThemeContextType {
   theme: Theme
   toggleTheme: () => void
+  isThemeTransitioning: boolean
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light')
+  const [isThemeTransitioning, setIsThemeTransitioning] = useState(false)
 
   useEffect(() => {
     // Initialize from persisted value; fallback to system preference.
@@ -39,16 +41,34 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const htmlElement = document.documentElement
-    htmlElement.classList.toggle('dark', theme === 'dark')
-    localStorage.setItem('theme', theme)
-  }, [theme])
+    
+    // Add transition class during theme change
+    if (isThemeTransitioning) {
+      htmlElement.classList.add('theme-transitioning')
+    } else {
+      htmlElement.classList.remove('theme-transitioning')
+    }
+    
+    // Force theme application with immediate DOM update
+    requestAnimationFrame(() => {
+      htmlElement.classList.toggle('dark', theme === 'dark')
+      localStorage.setItem('theme', theme)
+      
+      // Force reflow of all elements
+      htmlElement.style.display = 'none'
+      htmlElement.offsetHeight // Trigger reflow
+      htmlElement.style.display = ''
+    })
+  }, [theme, isThemeTransitioning])
 
   const toggleTheme = () => {
+    setIsThemeTransitioning(true)
     setTheme(prev => prev === 'light' ? 'dark' : 'light')
+    setTimeout(() => setIsThemeTransitioning(false), 300) // Match transition duration
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, isThemeTransitioning }}>
       {children}
     </ThemeContext.Provider>
   )

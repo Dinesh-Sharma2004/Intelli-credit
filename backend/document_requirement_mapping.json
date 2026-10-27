@@ -1,0 +1,58 @@
+[
+  {
+    "document_name": "fy24-annual-report-kinara-capital.pdf",
+    "classified_as": "annual_report",
+    "problem_statement_pillars": ["data_ingestor", "recommendation_engine"],
+    "indian_regulations": ["Companies Act 2013", "MCA annual filing framework", "Ind AS / Schedule III"],
+    "credit_signals": ["auditor commentary", "capital adequacy", "debt profile", "contingent liabilities"]
+  },
+  {
+    "document_name": "Annual Report FY 2024-25.pdf",
+    "classified_as": "annual_report",
+    "problem_statement_pillars": ["data_ingestor", "recommendation_engine"],
+    "indian_regulations": ["Companies Act 2013", "MCA annual filing framework", "Ind AS / Schedule III"],
+    "credit_signals": ["revenue trend", "governance disclosures", "related party transactions"]
+  },
+  {
+    "document_name": "VCL-ANNUAL REPORT FINAL.pdf",
+    "classified_as": "annual_report",
+    "problem_statement_pillars": ["data_ingestor", "recommendation_engine"],
+    "indian_regulations": ["Companies Act 2013", "MCA annual filing framework", "SEBI LODR if listed"],
+    "credit_signals": ["auditor notes", "borrowings", "liquidity position"]
+  },
+  {
+    "document_name": "Consolidated Annual report_FY 2022-23.pdf",
+    "classified_as": "annual_report",
+    "problem_statement_pillars": ["data_ingestor", "recommendation_engine"],
+    "indian_regulations": ["Companies Act 2013", "MCA annual filing framework", "Ind AS consolidated reporting"],
+    "credit_signals": ["group leverage", "subsidiary exposure", "consolidated profitability"]
+  },
+  {
+    "document_name": "Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+    "classified_as": "sustainability_report",
+    "problem_statement_pillars": ["research_agent", "recommendation_engine"],
+    "indian_regulations": ["BRSR / SEBI ESG disclosures", "environmental and labor compliance"],
+    "credit_signals": ["esg governance", "social impact narrative", "sustainability-linked risk indicators"]
+  },
+  {
+    "document_name": "1754051517.pdf",
+    "classified_as": "generic_pdf",
+    "problem_statement_pillars": ["data_ingestor"],
+    "indian_regulations": ["manual review required"],
+    "credit_signals": ["title extraction", "entity discovery", "fallback OCR"]
+  },
+  {
+    "document_name": "1754045722.pdf",
+    "classified_as": "generic_pdf",
+    "problem_statement_pillars": ["data_ingestor"],
+    "indian_regulations": ["manual review required"],
+    "credit_signals": ["title extraction", "entity discovery", "fallback OCR"]
+  },
+  {
+    "document_name": "1756892129.pdf",
+    "classified_as": "generic_pdf",
+    "problem_statement_pillars": ["data_ingestor"],
+    "indian_regulations": ["manual review required"],
+    "credit_signals": ["title extraction", "entity discovery", "fallback OCR"]
+  }
+]

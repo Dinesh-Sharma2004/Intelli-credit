@@ -1,0 +1,96 @@
+{
+  "anomaly_flags": [
+    "Anomalous return periods: 2023-12",
+    "GSTR-1 vs GSTR-3B outward value gap above 10% in 1 period(s)",
+    "GSTR-3B filed late in 4 period(s)",
+    "ITC claimed in GSTR-3B exceeds GSTR-2B availability in 6 period(s) (mean excess 8.8%)"
+  ],
+  "anomaly_score": 0.2569,
+  "compliance": {
+    "CRA-RATING": "evidence_mapped",
+    "GST-RECON": "exception_found",
+    "LIT-SEARCH": "evidence_mapped",
+    "MCA-FILING": "evidence_mapped",
+    "RBI-KYC-AML": "evidence_mapped"
+  },
+  "covenants": [
+    "Quarterly financial reporting covenant",
+    "No material adverse litigation covenant",
+    "Monthly GST-bank reconciliation submission",
+    "Enhanced monitoring trigger on EBITDA or collections deterioration",
+    "Immediate notification of legal notices, NCLT, or recovery filings"
+  ],
+  "decision": "review",
+  "early_warning_flags": [
+    "Declining EBITDA trend reference detected",
+    "GSTR-3B filed late in 4 period(s)",
+    "Litigation increase / legal exposure signal",
+    "Rating downgrade mention detected",
+    "Rising debtor days signal detected"
+  ],
+  "entity_counts": {
+    "annual_report": {
+      "CIN": 1,
+      "DATE": 1,
+      "FISCAL_YEAR": 4,
+      "GSTIN": 1,
+      "MONEY": 4,
+      "ORG": 2,
+      "PAN": 1,
+      "PERCENT": 4,
+      "PERSON": 2
+    },
+    "bank_statement": {},
+    "gst_filing": {
+      "GSTIN": 12
+    },
+    "rating_report": {
+      "FISCAL_YEAR": 2,
+      "GSTIN": 1,
+      "RATING": 1
+    }
+  },
+  "extraction_sources": {
+    "annual_report": "native",
+    "bank_statement": "native",
+    "gst_filing": "native",
+    "rating_report": "ocr"
+  },
+  "gst_reconciliation_risk": 0.2569,
+  "model_version": "xgboost-pd-synthetic-v2-a3b3739d",
+  "probability_of_default": 0.1319,
+  "reconciliation_counts": {
+    "late_filings": 4,
+    "months_itc_excess_breach": 6,
+    "months_outward_gap_breach": 1,
+    "round_trip_pairs": 0
+  },
+  "research": {
+    "MCA": [
+      "registry",
+      "low"
+    ],
+    "News": [
+      "media",
+      "medium"
+    ],
+    "RBI": [
+      "sector_regulation",
+      "low"
+    ],
+    "Sector Intelligence": [
+      "sector_signal",
+      "low"
+    ],
+    "e-Courts": [
+      "litigation",
+      "medium"
+    ]
+  },
+  "risk_grade": "BB",
+  "top_drivers": [
+    "Early warning score",
+    "Litigation risk",
+    "GST reconciliation risk"
+  ]
+}

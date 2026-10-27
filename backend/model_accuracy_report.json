@@ -1,0 +1,785 @@
+{
+  "timestamp": "2026-05-15T11:03:47.536837",
+  "dataset_root": "D:\\Chronicles\\intelli-credit\\backend\\Dataset\\verified_twice",
+  "max_images_per_language": 5,
+  "language_results": {
+    "assamese": {
+      "language": "assamese",
+      "language_code": "asm",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.037,
+          "wer": 0.15,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0292,
+          "wer": 0.1209,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0256,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0336,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0278,
+          "wer": 0.1,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.037037037037037035,
+          0.029156816390858944,
+          0.02564102564102564,
+          0.03361344537815126,
+          0.027777777777777776
+        ],
+        "wer": [
+          0.15,
+          0.12091503267973856,
+          0.1,
+          0.13333333333333333,
+          0.1
+        ]
+      },
+      "average_cer": 0.0306,
+      "average_wer": 0.1208,
+      "cer_range": [
+        0.0256,
+        0.037
+      ],
+      "wer_range": [
+        0.1,
+        0.15
+      ]
+    },
+    "bengali": {
+      "language": "bengali",
+      "language_code": "ben",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.012,
+          "wer": 0.05,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0,
+          "wer": 0.0,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0351,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0256,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.036,
+          "wer": 0.1471,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.012048192771084338,
+          0.0,
+          0.03508771929824561,
+          0.02564102564102564,
+          0.03597122302158273
+        ],
+        "wer": [
+          0.05,
+          0.0,
+          0.13333333333333333,
+          0.1,
+          0.14705882352941177
+        ]
+      },
+      "average_cer": 0.0217,
+      "average_wer": 0.0861,
+      "cer_range": [
+        0.0,
+        0.036
+      ],
+      "wer_range": [
+        0.0,
+        0.1471
+      ]
+    },
+    "gujarati": {
+      "language": "gujarati",
+      "language_code": "guj",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.0335,
+          "wer": 0.1187,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0258,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0281,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0395,
+          "wer": 0.15,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0321,
+          "wer": 0.1,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.03354632587859425,
+          0.02577319587628866,
+          0.028089887640449437,
+          0.039473684210526314,
+          0.03205128205128205
+        ],
+        "wer": [
+          0.11875,
+          0.1,
+          0.1,
+          0.15,
+          0.1
+        ]
+      },
+      "average_cer": 0.0318,
+      "average_wer": 0.1137,
+      "cer_range": [
+        0.0258,
+        0.0395
+      ],
+      "wer_range": [
+        0.1,
+        0.15
+      ]
+    },
+    "hindi": {
+      "language": "hindi",
+      "language_code": "hin",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "100",
+          "cer": 0.0335,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0488,
+          "wer": 0.2,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0258,
+          "wer": 0.0833,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0391,
+          "wer": 0.1562,
+          "status": "success"
+        },
+        {
+          "image_name": "104",
+          "cer": 0.027,
+          "wer": 0.1,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.03347280334728033,
+          0.04878048780487805,
+          0.02575107296137339,
+          0.0390625,
+          0.02702702702702703
+        ],
+        "wer": [
+          0.13333333333333333,
+          0.2,
+          0.08333333333333333,
+          0.15625,
+          0.1
+        ]
+      },
+      "average_cer": 0.0348,
+      "average_wer": 0.1346,
+      "cer_range": [
+        0.0258,
+        0.0488
+      ],
+      "wer_range": [
+        0.0833,
+        0.2
+      ]
+    },
+    "kannada": {
+      "language": "kannada",
+      "language_code": "kan",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.0132,
+          "wer": 0.05,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0362,
+          "wer": 0.1509,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0327,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0,
+          "wer": 0.0,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0304,
+          "wer": 0.11,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.013157894736842105,
+          0.03619909502262444,
+          0.0326530612244898,
+          0.0,
+          0.030379746835443037
+        ],
+        "wer": [
+          0.05,
+          0.1509433962264151,
+          0.13333333333333333,
+          0.0,
+          0.11
+        ]
+      },
+      "average_cer": 0.0225,
+      "average_wer": 0.0889,
+      "cer_range": [
+        0.0,
+        0.0362
+      ],
+      "wer_range": [
+        0.0,
+        0.1509
+      ]
+    },
+    "malayalam": {
+      "language": "malayalam",
+      "language_code": "mal",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "100",
+          "cer": 0.0357,
+          "wer": 0.1778,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0337,
+          "wer": 0.15,
+          "status": "success"
+        },
+        {
+          "image_name": "104",
+          "cer": 0.042,
+          "wer": 0.2,
+          "status": "success"
+        },
+        {
+          "image_name": "105",
+          "cer": 0.0322,
+          "wer": 0.1375,
+          "status": "success"
+        },
+        {
+          "image_name": "106",
+          "cer": 0.0289,
+          "wer": 0.1417,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.03571428571428571,
+          0.03369272237196765,
+          0.04199475065616798,
+          0.03217821782178218,
+          0.028854080791426217
+        ],
+        "wer": [
+          0.17777777777777778,
+          0.15,
+          0.2,
+          0.1375,
+          0.14166666666666666
+        ]
+      },
+      "average_cer": 0.0345,
+      "average_wer": 0.1614,
+      "cer_range": [
+        0.0289,
+        0.042
+      ],
+      "wer_range": [
+        0.1375,
+        0.2
+      ]
+    },
+    "marathi": {
+      "language": "marathi",
+      "language_code": "mar",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.027,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0288,
+          "wer": 0.0857,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0337,
+          "wer": 0.15,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0476,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "104",
+          "cer": 0.0253,
+          "wer": 0.1,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.02702702702702703,
+          0.02877697841726619,
+          0.033707865168539325,
+          0.047619047619047616,
+          0.02531645569620253
+        ],
+        "wer": [
+          0.1,
+          0.08571428571428572,
+          0.15,
+          0.13333333333333333,
+          0.1
+        ]
+      },
+      "average_cer": 0.0325,
+      "average_wer": 0.1138,
+      "cer_range": [
+        0.0253,
+        0.0476
+      ],
+      "wer_range": [
+        0.0857,
+        0.15
+      ]
+    },
+    "odia": {
+      "language": "odia",
+      "language_code": "odi",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.0287,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0227,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0325,
+          "wer": 0.125,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0368,
+          "wer": 0.1441,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0366,
+          "wer": 0.15,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.028708133971291867,
+          0.022727272727272728,
+          0.032467532467532464,
+          0.0367965367965368,
+          0.036585365853658534
+        ],
+        "wer": [
+          0.1,
+          0.1,
+          0.125,
+          0.14414414414414414,
+          0.15
+        ]
+      },
+      "average_cer": 0.0315,
+      "average_wer": 0.1238,
+      "cer_range": [
+        0.0227,
+        0.0368
+      ],
+      "wer_range": [
+        0.1,
+        0.15
+      ]
+    },
+    "punjabi": {
+      "language": "punjabi",
+      "language_code": "pan",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.0156,
+          "wer": 0.05,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0247,
+          "wer": 0.08,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.035,
+          "wer": 0.1259,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0254,
+          "wer": 0.0984,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.045,
+          "wer": 0.1667,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.015625,
+          0.024691358024691357,
+          0.03502673796791444,
+          0.025423728813559324,
+          0.04504504504504504
+        ],
+        "wer": [
+          0.05,
+          0.08,
+          0.1259105098855359,
+          0.09836065573770492,
+          0.16666666666666666
+        ]
+      },
+      "average_cer": 0.0292,
+      "average_wer": 0.1042,
+      "cer_range": [
+        0.0156,
+        0.045
+      ],
+      "wer_range": [
+        0.05,
+        0.1667
+      ]
+    },
+    "tamil": {
+      "language": "tamil",
+      "language_code": "tam",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "100",
+          "cer": 0.0227,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0442,
+          "wer": 0.1667,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0236,
+          "wer": 0.0667,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.0286,
+          "wer": 0.1,
+          "status": "success"
+        },
+        {
+          "image_name": "104",
+          "cer": 0.0349,
+          "wer": 0.1333,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.022727272727272728,
+          0.04424778761061947,
+          0.023622047244094488,
+          0.02857142857142857,
+          0.03487179487179487
+        ],
+        "wer": [
+          0.1,
+          0.16666666666666666,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333
+        ]
+      },
+      "average_cer": 0.0308,
+      "average_wer": 0.1133,
+      "cer_range": [
+        0.0227,
+        0.0442
+      ],
+      "wer_range": [
+        0.0667,
+        0.1667
+      ]
+    },
+    "telugu": {
+      "language": "telugu",
+      "language_code": "tel",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "100",
+          "cer": 0.0248,
+          "wer": 0.08,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.04,
+          "wer": 0.15,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0276,
+          "wer": 0.12,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.041,
+          "wer": 0.1667,
+          "status": "success"
+        },
+        {
+          "image_name": "104",
+          "cer": 0.0169,
+          "wer": 0.0645,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.024752475247524754,
+          0.04,
+          0.027649769585253458,
+          0.040983606557377046,
+          0.01694915254237288
+        ],
+        "wer": [
+          0.08,
+          0.15,
+          0.12,
+          0.16666666666666666,
+          0.06451612903225806
+        ]
+      },
+      "average_cer": 0.0301,
+      "average_wer": 0.1162,
+      "cer_range": [
+        0.0169,
+        0.041
+      ],
+      "wer_range": [
+        0.0645,
+        0.1667
+      ]
+    },
+    "urdu": {
+      "language": "urdu",
+      "language_code": "urd",
+      "images_tested": 5,
+      "successful": 5,
+      "document_results": [
+        {
+          "image_name": "0",
+          "cer": 0.05,
+          "wer": 0.2,
+          "status": "success"
+        },
+        {
+          "image_name": "100",
+          "cer": 0.0252,
+          "wer": 0.0968,
+          "status": "success"
+        },
+        {
+          "image_name": "101",
+          "cer": 0.0431,
+          "wer": 0.1333,
+          "status": "success"
+        },
+        {
+          "image_name": "102",
+          "cer": 0.0455,
+          "wer": 0.1818,
+          "status": "success"
+        },
+        {
+          "image_name": "103",
+          "cer": 0.041,
+          "wer": 0.1667,
+          "status": "success"
+        }
+      ],
+      "metrics": {
+        "cer": [
+          0.05,
+          0.025210084033613446,
+          0.04310344827586207,
+          0.045454545454545456,
+          0.040983606557377046
+        ],
+        "wer": [
+          0.2,
+          0.0967741935483871,
+          0.13333333333333333,
+          0.18181818181818182,
+          0.16666666666666666
+        ]
+      },
+      "average_cer": 0.041,
+      "average_wer": 0.1557,
+      "cer_range": [
+        0.0252,
+        0.05
+      ],
+      "wer_range": [
+        0.0968,
+        0.2
+      ]
+    }
+  },
+  "overall_metrics": {
+    "total_documents_tested": 60,
+    "total_successful": 60,
+    "average_cer": 0.0309,
+    "average_wer": 0.1194,
+    "cer_min": 0.0,
+    "cer_max": 0.05,
+    "wer_min": 0.0,
+    "wer_max": 0.2
+  }
+}

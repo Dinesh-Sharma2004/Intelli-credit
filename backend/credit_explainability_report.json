@@ -1,0 +1,81 @@
+{
+  "evaluation_target": "Intelli-Credit extracted documents and XGBoost-style explainability proxy",
+  "database_path": "D:\\Chronicles\\intelli-credit\\backend\\storage\\intelli_credit.db",
+  "document_grounding": {
+    "summary": {
+      "documents_evaluated": 4,
+      "average_identifier_grounding": 1.0,
+      "average_keyword_grounding": 1.0,
+      "average_risk_flag_grounding": 0.75,
+      "average_overall_grounding": 0.9167
+    },
+    "per_document": [
+      {
+        "document_name": "94057b62-ac62-40a0-a546-7fc84f41affd_fy24-annual-report-kinara-capital.txt",
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      },
+      {
+        "document_name": "1a3b9309-3dc6-4ab4-a89f-0c71145d345b_fy24-annual-report-kinara-capital.pdf",
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 0.0,
+        "overall_grounding": 0.6667
+      },
+      {
+        "document_name": "a27f94c1-9f2f-4968-b0e6-37eeb0ec4098_Vivriti Sustainability Report 2024-25 2 Sep.pdf",
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      },
+      {
+        "document_name": "2058771f-d617-45cd-928c-1e0ecc70af76_fy24-annual-report-kinara-capital.txt",
+        "identifier_grounding": 1.0,
+        "keyword_grounding": 1.0,
+        "risk_flag_grounding": 1.0,
+        "overall_grounding": 1.0
+      }
+    ]
+  },
+  "scorecard_explainability": {
+    "summary": {
+      "applications_evaluated": 3,
+      "average_directional_faithfulness": 0.9167,
+      "average_top3_overlap": 1.0
+    },
+    "per_application": [
+      {
+        "application_id": 1,
+        "base_pd": 0.0248,
+        "directional_faithfulness": 0.75,
+        "top3_overlap_with_recomputed_explanations": 1.0,
+        "stored_decision": "approve",
+        "stored_risk_grade": "A"
+      },
+      {
+        "application_id": 2,
+        "base_pd": 0.02,
+        "directional_faithfulness": 1,
+        "top3_overlap_with_recomputed_explanations": 1.0,
+        "stored_decision": "approve",
+        "stored_risk_grade": "A"
+      },
+      {
+        "application_id": 3,
+        "base_pd": 0.02,
+        "directional_faithfulness": 1,
+        "top3_overlap_with_recomputed_explanations": 1.0,
+        "stored_decision": "approve",
+        "stored_risk_grade": "A"
+      }
+    ]
+  },
+  "notes": [
+    "Document grounding measures whether extracted identifiers, keywords, and risk flags are traceable to stored source text.",
+    "Scorecard explainability uses the current backend scoring service as the XGBoost-style proxy and checks directional faithfulness under feature perturbation.",
+    "This evaluates the current prototype implementation, not a separately trained transformer/XGBoost production model."
+  ]
+}
